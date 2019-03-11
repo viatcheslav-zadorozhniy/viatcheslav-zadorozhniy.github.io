@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barcode scanner</title>
+</head>
+<body>
+    <h1>Barcode scanner</h1>
+
+    <div>
+        <button type="button" id="startButton">Start</button>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+    <br>
+
+    <div>
+        <video id="video" width="600" height="400" style="border: 1px solid gray"></video>
+    </div>
+
+    <div id="sourceSelectPanel" style="display:none">
+        <label for="sourceSelect">Change video source:</label>
+        <select id="sourceSelect" style="max-width:400px"></select>
+    </div>
+
+    <div>Result:</div>
+    <p id="result" style="white-space: pre-line;"></p>
+
+    <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
+    <script type="text/javascript">
+        const codeReader = new ZXing.BrowserBarcodeReader();
+
+        codeReader.getVideoInputDevices().then((videoInputDevices) => {
+            const sourceSelect = document.getElementById('sourceSelect');
+            let selectedDeviceId = videoInputDevices[0].deviceId;
+
+            if (videoInputDevices.length > 1) {
+                videoInputDevices.forEach((element) => {
+                    const sourceOption = document.createElement('option');
+                    sourceOption.text = element.label;
+                    sourceOption.value = element.deviceId;
+                    sourceSelect.appendChild(sourceOption);
+                });
+
+                sourceSelect.onchange = () => {
+                    selectedDeviceId = sourceSelect.value;
+                };
+
+                const sourceSelectPanel = document.getElementById('sourceSelectPanel');
+                sourceSelectPanel.style.display = 'block';
+            }
+
+            const printResult = x => document.getElementById('result').textContent += x + '\n';
+
+            const startDecode = () => {
+                codeReader.decodeFromInputVideoDevice(selectedDeviceId, 'video').then((result) => {
+                    printResult(result.text);
+                    startDecode();
+                }).catch(err => printResult(err));
+            };
+
+            document.getElementById('startButton').addEventListener('click', startDecode);
+
+            document.getElementById('resetButton').addEventListener('click', () => {
+                document.getElementById('result').textContent = '';
+                codeReader.reset();
+            });
+        }).catch(err => console.error(err));
+    </script>
+</body>
+</html>
