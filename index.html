@@ -7,28 +7,56 @@
     <title>Barcode scanner</title>
 </head>
 <body>
-    <h1>Barcode scanner</h1>
+    <article>
+        <h2>Barcode scanner</h2>
 
-<div><a target="_blank" href="geo:48.4834909%2C35.0609013">Geolocation: 48.4834909,35.0609013</a></div>
-<div><a target="_blank" href="geo:38.44046944444444,-122.71443055555555">Geolocation: 38°26'25.69"N,122°42'51.95"W</a></div>
+        <div>
+            <button type="button" id="startButton">Start</button>
+            <button type="button" id="resetButton">Reset</button>
+        </div>
+        <br>
 
-    <div>
-        <button type="button" id="startButton">Start</button>
-        <button type="button" id="resetButton">Reset</button>
-    </div>
-    <br>
+        <div>
+            <video id="video" width="600" height="400" style="border: 1px solid gray"></video>
+        </div>
 
-    <div>
-        <video id="video" width="600" height="400" style="border: 1px solid gray"></video>
-    </div>
+        <div id="sourceSelectPanel" style="display:none">
+            <label for="sourceSelect">Change video source:</label>
+            <select id="sourceSelect" style="max-width:400px"></select>
+        </div>
 
-    <div id="sourceSelectPanel" style="display:none">
-        <label for="sourceSelect">Change video source:</label>
-        <select id="sourceSelect" style="max-width:400px"></select>
-    </div>
+        <div>Result:</div>
+        <p id="result" style="white-space: pre-line;"></p>
+    </article>
 
-    <div>Result:</div>
-    <p id="result" style="white-space: pre-line;"></p>
+    <article>
+        <form id="coordinates-form">
+            <div>
+                <label>Latitude <input type="text" id="latitude"></label>
+            </div>
+
+            <div>
+                <label>Longitude <input type="text" id="longitude"></label>
+            </div>
+
+            <div>
+                <button type="submit">Apply</button>
+            </div>
+
+            <div>
+                <a id="coordinates-link" href="" target="_blank">Geo link</a>
+            </div>
+        </form>
+        <script type="text/javascript">
+            document.body.getElementById('coordinates-form').addEventListener('submit', event => {
+                event.preventDefault();
+
+                const latitude = document.getElementById('latitude').value;
+                const longitude = document.getElementById('longitude').value;
+                document.getElementById('coordinates-link').href = `geo:${latitude},${longitude}`;
+            });
+        </script>
+    </article>
 
     <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
     <script type="text/javascript">
