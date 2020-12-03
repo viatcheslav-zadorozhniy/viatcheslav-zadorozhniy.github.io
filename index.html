@@ -31,7 +31,9 @@
 
                 const latitude = document.getElementById('latitude').value;
                 const longitude = document.getElementById('longitude').value;
-                document.getElementById('coordinates-link').href = `geo:${latitude},${longitude}`;
+                const link = document.getElementById('coordinates-link');
+                link.href = `geo:${latitude},${longitude}`;
+                link.innerText = `${latitude},${longitude}`;
             });
         </script>
     </article>
