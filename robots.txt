@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /
-Sitemap: https://staging.erbis.com/sitemap.xml

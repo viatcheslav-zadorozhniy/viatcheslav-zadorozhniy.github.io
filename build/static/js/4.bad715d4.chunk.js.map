@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/home/home.component.js"],"names":["Home"],"mappings":"uNAAe,SAASA,IACtB,OACE","file":"static/js/4.bad715d4.chunk.js","sourcesContent":["export default function Home() {\r\n  return (\r\n    <h1>Home</h1>\r\n  );\r\n}\r\n"],"sourceRoot":""}
