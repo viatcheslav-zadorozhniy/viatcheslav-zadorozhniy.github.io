@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FullPage.js test page</title>
   <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500|Montserrat:400,400i,600|Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" integrity="sha512-YcLU32JXqopGSqbDbbAxxeUcZZpGiXIJW9I8PizsUdy9RDt2eM/kmPh/XSiGTHLHFQS19TvI76ElpTcUucczoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       color: #252525;
@@ -74,14 +74,15 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js" integrity="sha512-kR5v0zdimtzYLAfP/10CNymhBY9+vEorRekWkz4Pl78yDyF/0DxYGAFwMXXE4cyr53zTz2K6vLdhABMEhLCfzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js" integrity="sha512-j01AdfEs4bBTw5h96tjQj4R6cNFcWK5h3MzqJPreHiSjn+aPFF+B9kyJUNfMKMRsUoVZjAHewG1Wk0bjaznicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $('#main').fullpage({
+    new fullpage('#main', {
       fitToSection: false,
       autoScrolling: false,
       animateAnchor: false,
       touchSensitivity: 15,
+      // licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
     });
   </script>
 </body>
