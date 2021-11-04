@@ -1474,9 +1474,6 @@
     }
 
     .experimental-form-control:not(.experimental-form-control-active) {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
       display: block;
     }
 
@@ -1484,14 +1481,9 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      -webkit-box-shadow: 0px 0px 2px #12CFCF !important;
-      -webkit-box-shadow: 0px 0px 0px 2px #12CFCF !important;
-      box-shadow: 0px 0px 2px #12CFCF !important;
-      box-shadow: 0px 0px 0px 2px #12CFCF !important;
-      display: block;
     }
 
-    .experimental-form-control-active:active {
+    /* .experimental-form-control-active:active {
       box-shadow: var(--focus-box-shadow);
       outline: none;
     }
@@ -1505,7 +1497,7 @@
       box-shadow: 0px 0px 2px #12CFCF !important;
       box-shadow: 0px 0px 0px 2px #12CFCF !important;
       outline: none !important;
-    }
+    } */
   </style>
 </head>
 
@@ -1524,27 +1516,7 @@
                     <agx-form-control-wrapper _nghost-biu-c157="">
                       <div _ngcontent-biu-c157="" class="mb-3">
                         <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
-                            class="mb-0" for="signedBy"> Autocomplete
-                            <!----></label>
-                          <!---->
-                        </div>
-                        <!---->
-                        <div _ngcontent-biu-c157="" class="position-relative"><input
-                            class="experimental-form-control experimental-form-control-active w-100 ng-untouched ng-pristine ng-valid" id="signedBy" autocomplete="off"
-                            style="border-radius: 0;"
-                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
-                            <!----></label></div>
-                        <!---->
-                        <!---->
-                      </div>
-                      <!---->
-                    </agx-form-control-wrapper>
-                  </agx-input-control>
-                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
-                    <agx-form-control-wrapper _nghost-biu-c157="">
-                      <div _ngcontent-biu-c157="" class="mb-3">
-                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
-                            class="mb-0" for="signedBy"> Active
+                            class="mb-0" for="signedBy"> First
                             <!----></label>
                           <!---->
                         </div>
@@ -1559,19 +1531,38 @@
                       <!---->
                     </agx-form-control-wrapper>
                   </agx-input-control>
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="signedBy"> Second
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="signedBy"
+                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
                 </div>
                 <div _ngcontent-biu-c167="" class="experimental-col">
                   <agx-input-control _ngcontent-biu-c167="" class="w-100">
                     <agx-form-control-wrapper _nghost-biu-c157="">
                       <div _ngcontent-biu-c157="" class="mb-3">
                         <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
-                            class="mb-0" for="city"> Tabindex
+                            class="mb-0" for="city"> Third
                             <!----></label>
                           <!---->
                         </div>
                         <!---->
                         <div _ngcontent-biu-c157="" class="position-relative"><input
-                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="city" tabindex="0"
+                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="city"
                             type="text"><label _ngcontent-biu-c157="" for="city">
                             <!----></label></div>
                         <!---->
