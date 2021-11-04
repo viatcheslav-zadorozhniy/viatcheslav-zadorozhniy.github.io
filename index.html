@@ -16,13 +16,23 @@
 
         .experimental-form-control:focus,
         .experimental-form-control:active {
+          background-color: #fff !important;
           border-color: transparent !important;
+          -webkit-box-shadow: 0 0 2px #12CFCF !important;
+          -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
+          box-shadow: 0 0 2px #12CFCF !important;
           box-shadow: 0 0 0 2px #12CFCF !important;
           outline: none !important;
         }
     </style>
 </head>
 <body>
+  <div>
     <input class="experimental-form-control" type="text" />
+  </div>
+  <br>
+  <div>
+    <input class="experimental-form-control" type="text" style="border-radius: 0;" />
+  </div>
 </body>
 </html>
