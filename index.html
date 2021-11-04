@@ -2,117 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>
-    .gm-style .gm-style-mtc label,
-    .gm-style .gm-style-mtc div {
-      font-weight: 400
-    }
-
-    .gm-style .gm-style-mtc ul,
-    .gm-style .gm-style-mtc li {
-      box-sizing: border-box
-    }
-
-  </style>
-  <style>
-    .gm-control-active>img {
-      box-sizing: content-box;
-      display: none;
-      left: 50%;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%)
-    }
-
-    .gm-control-active>img:nth-child(1) {
-      display: block
-    }
-
-    .gm-control-active:hover>img:nth-child(1),
-    .gm-control-active:active>img:nth-child(1) {
-      display: none
-    }
-
-    .gm-control-active:hover>img:nth-child(2),
-    .gm-control-active:active>img:nth-child(3) {
-      display: block
-    }
-
-  </style>
-  <style>
-    .gm-ui-hover-effect {
-      opacity: .6
-    }
-
-    .gm-ui-hover-effect:hover {
-      opacity: 1
-    }
-
-  </style>
-  <style>
-    .gm-style .gm-style-cc a,
-    .gm-style .gm-style-cc button,
-    .gm-style .gm-style-cc span,
-    .gm-style .gm-style-mtc div {
-      font-size: 10px;
-      box-sizing: border-box
-    }
-
-  </style>
-  <style>
-    @media print {
-
-      .gm-style .gmnoprint,
-      .gmnoprint {
-        display: none
-      }
-    }
-
-    @media screen {
-
-      .gm-style .gmnoscreen,
-      .gmnoscreen {
-        display: none
-      }
-    }
-
-  </style>
-  <link type="text/css" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400">
-  <link type="text/css" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
-  <style>
-    .gm-style-pbc {
-      transition: opacity ease-in-out;
-      background-color: rgba(0, 0, 0, 0.45);
-      text-align: center
-    }
-
-    .gm-style-pbt {
-      font-size: 22px;
-      color: white;
-      font-family: Roboto, Arial, sans-serif;
-      position: relative;
-      margin: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%)
-    }
-
-  </style>
-  <style>
-    .gm-style img {
-      max-width: none;
-    }
-
-    .gm-style {
-      font: 400 11px Roboto, Arial, sans-serif;
-      text-decoration: none;
-    }
-
-  </style>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <meta charset="utf-8">
   <title>Agistix Forms</title>
@@ -125,6 +14,10 @@
   <meta name="referrer" content="no-referrer-when-downgrade">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
+    .experimental-form-control-active:active {
+      box-shadow: var(--focus-box-shadow);
+      outline: none;
+    }
     @font-face {
       font-family: 'Roboto';
       font-style: normal;
@@ -376,7 +269,6 @@
       src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-
   </style>
   <style type="text/css">
     @font-face {
@@ -470,7 +362,6 @@
       src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-
   </style>
   <link rel="fontIcon" type="image/x-fontIcon" href="favicon.ico">
   <meta data-kcorigin="https://kc-staging.agistix.com">
@@ -478,11 +369,6 @@
   <meta data-driverapporigin="https://driver-staging.agistix.com">
   <meta data-isproduction="false">
 
-  <!-- Google Map API Key -->
-  <script>
-    window.googlemapapikey = "AIzaSyDCDefirQ7egggAXFuhjg7gZmXqiGorbPc";
-
-  </script>
   <!-- End Google Map API Key -->
   <style>
     @charset "UTF-8";
@@ -587,19 +473,16 @@
       font: var(--body-font);
       color: var(--body-color);
     }
-
   </style>
-  <link rel="stylesheet" href="styles.e4ef3192dcfe6032e5a1.css" media="all" onload="this.media='all'"><noscript>
-    <link rel="stylesheet" href="styles.e4ef3192dcfe6032e5a1.css"></noscript>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NK9J2C6SJT"></script>
+  <link rel="stylesheet" href="styles.c9d72974ea1a154a35f8.css" media="all" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles.c9d72974ea1a154a35f8.css"></noscript>
   <style>
-    [_nghost-jia-c14] {
+    [_nghost-biu-c14] {
       display: block;
       height: 100%;
       overflow: hidden;
       width: 100%
     }
-
   </style>
   <style></style>
   <style>
@@ -693,12 +576,11 @@
         transform: rotate(360deg);
       }
     }
-
   </style>
-  <link id="theme" type="text/css" rel="stylesheet" href="assets/themes/experimental.css?build=20211101110950">
-  <link id="color-scheme" type="text/css" rel="stylesheet" href="assets/color-schemes/abc.css?build=20211101110950">
+  <link id="theme" type="text/css" rel="stylesheet" href="assets/themes/experimental.css?build=20211104081436">
+  <link id="color-scheme" type="text/css" rel="stylesheet" href="assets/color-schemes/abc.css?build=20211104081436">
   <style>
-    [_nghost-jia-c79] {
+    [_nghost-biu-c79] {
       display: flex;
       flex-direction: column;
       overflow: auto;
@@ -706,13 +588,12 @@
       position: relative
     }
 
-    agx-app-version[_ngcontent-jia-c79] {
+    agx-app-version[_ngcontent-biu-c79] {
       margin-top: auto
     }
-
   </style>
   <style>
-    .alerts-container[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] {
       position: fixed;
       top: 0;
       z-index: 1210;
@@ -720,7 +601,7 @@
       margin: 10px
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] {
       padding: .4rem .5rem .4rem 1rem;
       color: #fff;
       border-radius: 2px;
@@ -729,33 +610,33 @@
     }
 
     @media (max-width: 575.98px) {
-      .alerts-container[_ngcontent-jia-c41] .alert[_ngcontent-jia-c41] {
+      .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] {
         min-width: auto;
         width: calc(100vw - 20px)
       }
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert.alert-success[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-success[_ngcontent-biu-c41] {
       background-color: #59b377;
       border-color: #59b377
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert.alert-warning[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-warning[_ngcontent-biu-c41] {
       background-color: #e6bc5c;
       border-color: #e6bc5c
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert.alert-danger[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-danger[_ngcontent-biu-c41] {
       background-color: #b23541;
       border-color: #b23541
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert.alert-info[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-info[_ngcontent-biu-c41] {
       background-color: #17a2b8;
       border-color: #17a2b8
     }
 
-    .alerts-container[_ngcontent-jia-c41] .alert[_ngcontent-jia-c41] i[_ngcontent-jia-c41] {
+    .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] i[_ngcontent-biu-c41] {
       align-self: flex-start;
       cursor: pointer;
       font-size: 11px;
@@ -763,57 +644,56 @@
       position: relative;
       top: 4px
     }
-
   </style>
   <style>
-    [_nghost-jia-c78] {
+    [_nghost-biu-c78] {
       display: flex;
       justify-content: space-between;
       padding: var(--page-header-padding);
       align-items: center;
-      background-color: var(--page-header-bg);
+      background: var(--page-header-bg);
       height: var(--page-header-height);
       color: var(--page-header-color);
       flex-shrink: 0
     }
 
     @media only screen and (max-width: 768px) {
-      [_nghost-jia-c78] {
+      [_nghost-biu-c78] {
         padding: var(--page-header-mobile-padding)
       }
     }
 
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78]:hover {
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:hover {
       background-color: var(--primary-color)
     }
 
-    .experimental[_nghost-jia-c78] .btn-menu.active[_ngcontent-jia-c78],
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78]:active,
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78]:focus {
+    .experimental[_nghost-biu-c78] .btn-menu.active[_ngcontent-biu-c78],
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:active,
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:focus {
       box-shadow: var(--focus-box-shadow);
       border-radius: 4px;
       fill: var(--page-header-button-color)
     }
 
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78]:active {
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:active {
       background-color: var(--main-darker-color)
     }
 
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78],
-    .experimental[_nghost-jia-c78] .action-item[_ngcontent-jia-c78] {
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78],
+    .experimental[_nghost-biu-c78] .action-item[_ngcontent-biu-c78] {
       transition: none
     }
 
-    .experimental[_nghost-jia-c78] .btn-menu[_ngcontent-jia-c78]:hover,
-    .experimental[_nghost-jia-c78] .action-item[_ngcontent-jia-c78]:hover {
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:hover,
+    .experimental[_nghost-biu-c78] .action-item[_ngcontent-biu-c78]:hover {
       transform: none
     }
 
-    .experimental[_nghost-jia-c78] .menu-content[_ngcontent-jia-c78] .dropdown-item[_ngcontent-jia-c78] {
+    .experimental[_nghost-biu-c78] .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] {
       padding: 11px 16px
     }
 
-    .experimental[_nghost-jia-c78] .global-search-container[_ngcontent-jia-c78] {
+    .experimental[_nghost-biu-c78] .global-search-container[_ngcontent-biu-c78] {
       margin: 0 16px;
       border-radius: 4px;
       border: none;
@@ -821,13 +701,13 @@
       justify-content: flex-end
     }
 
-    .logo[_ngcontent-jia-c78],
-    .logo[_ngcontent-jia-c78] img[_ngcontent-jia-c78] {
+    .logo[_ngcontent-biu-c78],
+    .logo[_ngcontent-biu-c78] img[_ngcontent-biu-c78] {
       height: var(--page-header-logo-height);
       width: var(--page-header-logo-width)
     }
 
-    .btn-menu[_ngcontent-jia-c78] {
+    .btn-menu[_ngcontent-biu-c78] {
       fill: var(--page-header-button-color);
       width: var(--page-header-menu-width);
       height: var(--page-header-menu-height);
@@ -839,32 +719,32 @@
       z-index: 1200
     }
 
-    .btn-menu.active[_ngcontent-jia-c78] {
+    .btn-menu.active[_ngcontent-biu-c78] {
       fill: var(--primary)
     }
 
-    .action-item[_ngcontent-jia-c78] {
+    .action-item[_ngcontent-biu-c78] {
       color: var(--page-header-button-color);
       cursor: pointer;
       font-size: 1.25rem
     }
 
-    .btn-menu[_ngcontent-jia-c78],
-    .action-item[_ngcontent-jia-c78] {
+    .btn-menu[_ngcontent-biu-c78],
+    .action-item[_ngcontent-biu-c78] {
       transition: transform .2s ease-in-out
     }
 
-    .btn-menu[_ngcontent-jia-c78]:hover,
-    .action-item[_ngcontent-jia-c78]:hover {
+    .btn-menu[_ngcontent-biu-c78]:hover,
+    .action-item[_ngcontent-biu-c78]:hover {
       transform: scale(1.1)
     }
 
-    .menu-content[_ngcontent-jia-c78] {
+    .menu-content[_ngcontent-biu-c78] {
       color: var(--page-header-menu-content-color);
       font: var(--body-font)
     }
 
-    .menu-content[_ngcontent-jia-c78] .dropdown-item[_ngcontent-jia-c78] {
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] {
       color: inherit;
       display: flex;
       align-items: center;
@@ -872,29 +752,28 @@
       padding: 4px 0
     }
 
-    .menu-content[_ngcontent-jia-c78] .dropdown-item[_ngcontent-jia-c78] svg[_ngcontent-jia-c78] {
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] svg[_ngcontent-biu-c78] {
       fill: var(--page-header-menu-content-color)
     }
 
-    .menu-content[_ngcontent-jia-c78] .dropdown-item[_ngcontent-jia-c78]:hover {
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78]:hover {
       text-decoration: underline;
       background-color: transparent
     }
 
-    .menu-content[_ngcontent-jia-c78] .dropdown-item[_ngcontent-jia-c78]:hover svg[_ngcontent-jia-c78] {
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78]:hover svg[_ngcontent-biu-c78] {
       fill: var(--primary)
     }
 
-    .menu-content[_ngcontent-jia-c78] svg[_ngcontent-jia-c78] {
+    .menu-content[_ngcontent-biu-c78] svg[_ngcontent-biu-c78] {
       height: 16px;
       width: 20px
     }
-
   </style>
   <style>
     @charset "UTF-8";
 
-    [_nghost-jia-c43] {
+    [_nghost-biu-c43] {
       height: 21px;
       display: flex;
       justify-content: space-between;
@@ -905,21 +784,20 @@
       font-size: 11px
     }
 
-    [theme=dark][_nghost-jia-c43] {
+    [theme=dark][_nghost-biu-c43] {
       background-color: #3d4251
     }
 
     @media (max-width: 767.98px) {
-      [_nghost-jia-c43] {
+      [_nghost-biu-c43] {
         height: 42px
       }
     }
 
-    a[_ngcontent-jia-c43]:not(:last-child):after {
+    a[_ngcontent-biu-c43]:not(:last-child):after {
       content: "\b7";
       margin: 0 .2rem
     }
-
   </style>
   <style>
     .ngxp__container {
@@ -1069,78 +947,80 @@
         opacity: 1
       }
     }
-
   </style>
   <style>
-    [_nghost-jia-c165] {
+    [_nghost-biu-c167] {
       height: 100%;
       overflow: hidden;
       padding: 0
     }
 
-    .info-label[_ngcontent-jia-c165] {
+    .info-label[_ngcontent-biu-c167] {
       min-width: 100px;
       width: 100px
     }
 
-    fieldset[_ngcontent-jia-c165] {
+    fieldset[_ngcontent-biu-c167] {
       border-bottom: 1px solid var(--border-color)
     }
 
-    .experimental-col[_ngcontent-jia-c165] {
+    .experimental-col[_ngcontent-biu-c167] {
       width: 100%
     }
 
-    agx-tracking-map[_ngcontent-jia-c165] {
+    agx-tracking-map[_ngcontent-biu-c167] {
       width: 40%
     }
 
-    form[_ngcontent-jia-c165] {
+    form[_ngcontent-biu-c167] {
       --content-padding-x: 20px;
       padding: 20px var(--content-padding-x)
     }
 
     @media (min-width: 1024px) {
-      form[_ngcontent-jia-c165] {
+      form[_ngcontent-biu-c167] {
         --content-padding-x: 50px;
         width: 60%
       }
     }
 
     @media (max-width: 768px) {
-      button[type=submit][_ngcontent-jia-c165] {
+      button[type=submit][_ngcontent-biu-c167] {
         width: 100%
+      }
+
+      .transit-history-bottom-link[_ngcontent-biu-c167] {
+        display: none
       }
     }
 
     @media (min-width: 768px) {
-      form[_ngcontent-jia-c165] {
+      form[_ngcontent-biu-c167] {
         --content-padding-x: 25px
       }
 
-      .experimental-col[_ngcontent-jia-c165] {
+      .experimental-col[_ngcontent-biu-c167] {
         width: 50%
       }
 
-      .experimental-col[_ngcontent-jia-c165]:first-child {
+      .experimental-col[_ngcontent-biu-c167]:first-child {
         border-right: 1px solid var(--border-color);
         padding-right: 1.5rem
       }
 
-      .experimental-col[_ngcontent-jia-c165]:last-child {
+      .experimental-col[_ngcontent-biu-c167]:last-child {
         padding-left: 1.5rem
       }
     }
-
   </style>
   <style>
-    [_nghost-jia-c77] {
+    [_nghost-biu-c77] {
       display: flex;
       justify-content: flex-end;
       left: auto
     }
 
-    form[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] {
       background-color: transparent;
       border: 1px solid transparent;
       color: #353a45;
@@ -1153,27 +1033,27 @@
       transition-property: background-color, border-color, width
     }
 
-    form.expanded[_ngcontent-jia-c77] {
+    form.expanded[_ngcontent-biu-c77] {
       background-color: rgba(242, 244, 247, .4);
       border-color: #e4e6e8;
       width: 100%
     }
 
-    form.expanded[_ngcontent-jia-c77] .search-control[_ngcontent-jia-c77] {
+    form.expanded[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77] {
       pointer-events: all
     }
 
-    form.expanded[_ngcontent-jia-c77] .icon-search[_ngcontent-jia-c77] {
+    form.expanded[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77] {
       background-color: transparent;
       color: var(--primary)
     }
 
-    form.expanded[_ngcontent-jia-c77] .icon-close[_ngcontent-jia-c77] {
+    form.expanded[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77] {
       background-color: transparent;
       color: rgba(117, 125, 146, .6)
     }
 
-    form[_ngcontent-jia-c77] .search-control[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77] {
       background: transparent;
       border: none;
       box-shadow: none;
@@ -1181,12 +1061,12 @@
       pointer-events: none
     }
 
-    form[_ngcontent-jia-c77] .search-control[_ngcontent-jia-c77]::-ms-clear {
+    form[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77]::-ms-clear {
       display: none
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77],
-    form[_ngcontent-jia-c77] typeahead-container.dropdown-menu {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77],
+    form[_ngcontent-biu-c77] typeahead-container.dropdown-menu {
       background-color: #fff;
       border: 1px solid #E4E6E8;
       border-radius: 0 0 2px 2px;
@@ -1195,34 +1075,34 @@
       right: -1px
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77] {
       position: absolute;
       top: 100%;
       padding: 0 10px 5px
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77]>*[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>*[_ngcontent-biu-c77] {
       padding: 10px
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77]>agx-tabs[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>agx-tabs[_ngcontent-biu-c77] {
       padding: 0
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77]>a[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>a[_ngcontent-biu-c77] {
       border: 1px solid #E4E6E8;
       background-color: rgba(246, 248, 248, .6);
       margin-bottom: 5px
     }
 
-    form[_ngcontent-jia-c77] .typeahead-message[_ngcontent-jia-c77] a[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77] a[_ngcontent-biu-c77] {
       display: block;
       line-height: inherit;
       cursor: pointer
     }
 
-    form[_ngcontent-jia-c77] .icon-search[_ngcontent-jia-c77],
-    form[_ngcontent-jia-c77] .icon-close[_ngcontent-jia-c77] {
+    form[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77],
+    form[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77] {
       cursor: pointer;
       line-height: 2rem;
       position: absolute;
@@ -1231,29 +1111,29 @@
       top: calc((50px - 2rem) / 2 - 1px)
     }
 
-    form[_ngcontent-jia-c77] .icon-search[_ngcontent-jia-c77]:not(:hover),
-    form[_ngcontent-jia-c77] .icon-close[_ngcontent-jia-c77]:not(:hover) {
+    form[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77]:not(:hover),
+    form[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77]:not(:hover) {
       color: #757d92
     }
 
-    .shipment-list-wrapper[_ngcontent-jia-c77] {
+    .shipment-list-wrapper[_ngcontent-biu-c77] {
       overflow-y: auto
     }
 
-    .shipment-list-wrapper[_ngcontent-jia-c77],
-    .shipment-list-wrapper[_ngcontent-jia-c77] table[_ngcontent-jia-c77] {
+    .shipment-list-wrapper[_ngcontent-biu-c77],
+    .shipment-list-wrapper[_ngcontent-biu-c77] table[_ngcontent-biu-c77] {
       max-height: 290px
     }
 
-    .shipment-list-wrapper.has-scrollbar[_ngcontent-jia-c77] {
+    .shipment-list-wrapper.has-scrollbar[_ngcontent-biu-c77] {
       overflow: hidden
     }
 
-    .shipment-list-wrapper.has-scrollbar[_ngcontent-jia-c77] table[_ngcontent-jia-c77] {
+    .shipment-list-wrapper.has-scrollbar[_ngcontent-biu-c77] table[_ngcontent-biu-c77] {
       overflow-y: auto
     }
 
-    [_nghost-jia-c77] typeahead-container.dropdown-menu {
+    [_nghost-biu-c77] typeahead-container.dropdown-menu {
       max-height: 327px !important;
       height: auto;
       margin-left: -1px;
@@ -1262,66 +1142,66 @@
       overflow: hidden
     }
 
-    table[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] {
       overflow-y: auto
     }
 
-    table[_ngcontent-jia-c77] tr[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] td[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] th[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] thead[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] tr[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] thead[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
       display: block
     }
 
-    table[_ngcontent-jia-c77] thead[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] thead[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
       padding-right: 10px
     }
 
-    table[_ngcontent-jia-c77] tr[_ngcontent-jia-c77]:after {
+    table[_ngcontent-biu-c77] tr[_ngcontent-biu-c77]:after {
       clear: both;
       content: " ";
       display: block;
       visibility: hidden
     }
 
-    table[_ngcontent-jia-c77] td[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] th[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77] {
       float: left
     }
 
-    table[_ngcontent-jia-c77] th.all-results-header[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] th.all-results-header[_ngcontent-biu-c77] {
       float: right;
       text-align: right
     }
 
-    table[_ngcontent-jia-c77] th[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77] {
       color: #757d92;
       font-weight: normal;
       line-height: 40px;
       padding: 0 0 0 1rem
     }
 
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
       padding-bottom: 5px
     }
 
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] tr[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr[_ngcontent-biu-c77] {
       background-color: rgba(246, 248, 248, .6);
       border-radius: 2px;
       margin-bottom: 5px
     }
 
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] tr[_ngcontent-jia-c77]:hover {
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr[_ngcontent-biu-c77]:hover {
       background-color: rgba(246, 248, 248, .2)
     }
 
-    table[_ngcontent-jia-c77] tbody[_ngcontent-jia-c77] tr.is-focused[_ngcontent-jia-c77] td[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr.is-focused[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
       border-color: #4d90fe
     }
 
-    table[_ngcontent-jia-c77] td[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
       border-top: 1px solid #E4E6E8;
       border-bottom: 1px solid #E4E6E8;
       height: 45px;
@@ -1329,18 +1209,18 @@
       position: relative
     }
 
-    table[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:first-child {
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:first-child {
       border-left: 1px solid #E4E6E8
     }
 
-    table[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:last-child {
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:last-child {
       border-right: 1px solid #E4E6E8
     }
 
-    table[_ngcontent-jia-c77] .shipment-id[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] .shipment-link[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] .shipment-pickup[_ngcontent-jia-c77],
-    table[_ngcontent-jia-c77] .shipment-delivery[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] .shipment-id[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-link[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-pickup[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-delivery[_ngcontent-biu-c77] {
       bottom: 0;
       left: 1rem;
       max-width: calc(100% - 2rem);
@@ -1349,86 +1229,86 @@
       top: 0
     }
 
-    table[_ngcontent-jia-c77] .link[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] .link[_ngcontent-biu-c77] {
       color: #6594c2;
       cursor: pointer
     }
 
-    table[_ngcontent-jia-c77] .subheader[_ngcontent-jia-c77] {
+    table[_ngcontent-biu-c77] .subheader[_ngcontent-biu-c77] {
       font-weight: 600;
       padding: 0
     }
 
-    .shipment-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77],
-    .shipment-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77] {
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
       width: 20%
     }
 
-    .shipment-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:last-child,
-    .shipment-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:last-child {
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:last-child,
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:last-child {
       width: 15%
     }
 
-    .shipment-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(4),
-    .shipment-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(4) {
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(4),
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(4) {
       width: 25%
     }
 
-    .vendor-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(1),
-    .vendor-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(1),
-    .account-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(1),
-    .account-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(1) {
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(1),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(1),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(1),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(1) {
       width: 60%
     }
 
-    .vendor-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(2),
-    .vendor-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(2),
-    .account-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(2),
-    .account-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(2) {
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(2),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(2),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(2),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(2) {
       width: 25%
     }
 
-    .vendor-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(3),
-    .vendor-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(3),
-    .account-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(3),
-    .account-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(3) {
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(3),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(3),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(3),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(3) {
       width: 15%
     }
 
-    .user-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77],
-    .user-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77] {
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
       width: 20%
     }
 
-    .user-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(5),
-    .user-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(5) {
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(5),
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(5) {
       width: 12%
     }
 
-    .user-row[_ngcontent-jia-c77] th[_ngcontent-jia-c77]:nth-child(6),
-    .user-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(6) {
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(6),
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(6) {
       width: 8%
     }
 
-    .user-row[_ngcontent-jia-c77] td[_ngcontent-jia-c77]:nth-child(6) {
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(6) {
       padding: 8px
     }
 
-    .no-results-message[_ngcontent-jia-c77],
-    .typeahead-search-term-marked[_ngcontent-jia-c77] {
+    .no-results-message[_ngcontent-biu-c77],
+    .typeahead-search-term-marked[_ngcontent-biu-c77] {
       font-weight: 600
     }
 
-    .no-results-message[_ngcontent-jia-c77] {
+    .no-results-message[_ngcontent-biu-c77] {
       font-size: 14px
     }
 
     @media (max-width: 767.98px) {
-      form.expanded[_ngcontent-jia-c77] {
+      form.expanded[_ngcontent-biu-c77] {
         max-width: 100%
       }
 
-      form.expanded[_ngcontent-jia-c77] .icon-search[_ngcontent-jia-c77] {
+      form.expanded[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77] {
         right: 10px
       }
 
@@ -1436,44 +1316,42 @@
         height: calc(100vh - 50px) !important
       }
     }
-
   </style>
   <style>
-    select[_ngcontent-jia-c163] {
+    select[_ngcontent-biu-c163] {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none
     }
 
-    select.empty[_ngcontent-jia-c163] {
+    select.empty[_ngcontent-biu-c163] {
       color: var(--form-placeholder-color);
       font-style: var(--form-placeholder-font-style)
     }
 
-    option[_ngcontent-jia-c163] {
+    option[_ngcontent-biu-c163] {
       background-color: #fff;
       color: var(--form-control-color);
       font-style: normal;
       font-style: initial
     }
-
   </style>
   <style>
-    [_nghost-jia-c134] {
+    [_nghost-biu-c134] {
       display: block
     }
 
-    input[_ngcontent-jia-c134] {
+    input[_ngcontent-biu-c134] {
       display: none
     }
 
-    .error-message[_ngcontent-jia-c134] {
+    .error-message[_ngcontent-biu-c134] {
       color: #b23541;
       font-size: 11px;
       white-space: pre-wrap
     }
 
-    label[_ngcontent-jia-c134] {
+    label[_ngcontent-biu-c134] {
       color: #757d92;
       line-height: 50px;
       border: 2px dashed #E4E6E8;
@@ -1485,15 +1363,15 @@
       display: block
     }
 
-    label.drag-over[_ngcontent-jia-c134] {
+    label.drag-over[_ngcontent-biu-c134] {
       border-color: var(--primary)
     }
 
-    label[_ngcontent-jia-c134] span[_ngcontent-jia-c134] {
+    label[_ngcontent-biu-c134] span[_ngcontent-biu-c134] {
       color: var(--primary)
     }
 
-    label[_ngcontent-jia-c134] .additional-label[_ngcontent-jia-c134] {
+    label[_ngcontent-biu-c134] .additional-label[_ngcontent-biu-c134] {
       display: block;
       font-weight: 400;
       line-height: .5rem;
@@ -1501,12 +1379,12 @@
     }
 
     @media (max-width: 991.98px) {
-      label[_ngcontent-jia-c134] .additional-label[_ngcontent-jia-c134] {
+      label[_ngcontent-biu-c134] .additional-label[_ngcontent-biu-c134] {
         line-height: normal
       }
     }
 
-    .file-icon[_ngcontent-jia-c134] {
+    .file-icon[_ngcontent-biu-c134] {
       color: #fff;
       height: 44px;
       width: 44px;
@@ -1515,31 +1393,30 @@
       background-color: rgba(117, 125, 146, .8)
     }
 
-    .file-title[_ngcontent-jia-c134] {
+    .file-title[_ngcontent-biu-c134] {
       color: #303030;
       font-weight: 600
     }
 
-    .file-note[_ngcontent-jia-c134] {
+    .file-note[_ngcontent-biu-c134] {
       color: #757d92
     }
 
-    .remove-btn[_ngcontent-jia-c134] {
+    .remove-btn[_ngcontent-biu-c134] {
       color: #757d92;
       cursor: pointer
     }
-
   </style>
   <style>
-    .experimental-check-box[_ngcontent-jia-c164] {
+    .experimental-check-box[_ngcontent-biu-c164] {
       padding: var(--checkbox-padding)
     }
 
-    .experimental-check-box[_ngcontent-jia-c164]:hover {
+    .experimental-check-box[_ngcontent-biu-c164]:hover {
       background-color: var(--interactive-element-hover-bg)
     }
 
-    .experimental-check-box-input-wrapper[_ngcontent-jia-c164] {
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] {
       height: var(--checkbox-size);
       width: var(--checkbox-size);
       border: 1px solid var(--checkbox-border-color);
@@ -1547,515 +1424,147 @@
       background-color: #fff
     }
 
-    .experimental-check-box-input-wrapper[_ngcontent-jia-c164]:focus {
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164]:focus {
       border-radius: 4px
     }
 
-    .experimental-check-box-input-wrapper.check-box-checked[_ngcontent-jia-c164] {
+    .experimental-check-box-input-wrapper.check-box-checked[_ngcontent-biu-c164] {
       border-color: var(--primary);
       border-width: 2px
     }
 
-    .experimental-check-box-input-wrapper[_ngcontent-jia-c164] svg-icon[_ngcontent-jia-c164] {
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] svg-icon[_ngcontent-biu-c164] {
       fill: var(--primary);
       align-self: center;
       height: var(--checkbox-checked-icon-height)
     }
 
-    .experimental-check-box-input-wrapper[_ngcontent-jia-c164] input[_ngcontent-jia-c164] {
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] input[_ngcontent-biu-c164] {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none
     }
 
-    .experimental-check-box[_ngcontent-jia-c164] label[_ngcontent-jia-c164] {
+    .experimental-check-box[_ngcontent-biu-c164] label[_ngcontent-biu-c164] {
       padding-left: calc(var(--checkbox-size) + 10px);
       z-index: 10;
       line-height: var(--checkbox-size)
     }
-
   </style>
   <style>
-    .asterisk[_ngcontent-jia-c157] {
+    .asterisk[_ngcontent-biu-c157] {
       color: inherit
     }
 
-    .error-message[_ngcontent-jia-c157] {
+    .error-message[_ngcontent-biu-c157] {
       color: var(--form-error-color)
     }
 
-    .form-control-icon[_ngcontent-jia-c157] {
+    .form-control-icon[_ngcontent-biu-c157] {
       color: var(--form-control-icon-color);
       right: 10px;
       top: 50%;
       transform: translateY(-50%)
     }
 
-    .expanded-label[_ngcontent-jia-c157] {
+    .expanded-label[_ngcontent-biu-c157] {
       padding-top: 7px
     }
 
     @media (min-width: 1024px) {
-      .expanded-label[_ngcontent-jia-c157] {
+      .expanded-label[_ngcontent-biu-c157] {
         padding-top: 3px
       }
     }
-
   </style>
-  <style>
-    agm-map[_ngcontent-jia-c145] {
-      height: 100%;
-      width: 100%
-    }
-
-    .gm-close-icon[_ngcontent-jia-c145] {
-      z-index: 1;
-      background: none rgb(255, 255, 255);
-      border: 0px;
-      margin: 10px;
-      padding: 0;
-      position: absolute;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      border-radius: 2px;
-      height: 40px;
-      width: 40px;
-      box-shadow: rgba(0, 0, 0, .302) 0 1px 4px -1px;
-      overflow: hidden;
-      top: 0px;
-      right: 0px
-    }
-
-    .gm-close-icon[_ngcontent-jia-c145] img[_ngcontent-jia-c145] {
-      opacity: .65
-    }
-
-    .gm-close-icon[_ngcontent-jia-c145]:hover img[_ngcontent-jia-c145],
-    .gm-close-icon[_ngcontent-jia-c145]:focus img[_ngcontent-jia-c145],
-    .gm-close-icon[_ngcontent-jia-c145]:active img[_ngcontent-jia-c145] {
-      opacity: 1
-    }
-
-  </style>
-  <style>
-    .agm-map-container-inner[_ngcontent-jia-c143] {
-      width: inherit;
-      height: inherit;
-    }
-
-    .agm-map-content[_ngcontent-jia-c143] {
-      display: none;
-    }
-
-  </style>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/common.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/util.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/geocoder.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/map.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/onion.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/geometry.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/directions.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/marker.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/infowindow.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/poly.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/45/8b/intl/uk_ALL/controls.js"></script>
 </head>
 
-<body>
-  <agx-forms-root _nghost-jia-c14="" ng-version="12.2.10">
-    <block-ui _ngcontent-jia-c14="" name="root">
-      <router-outlet _ngcontent-jia-c14=""></router-outlet>
-      <agx-forms-host _nghost-jia-c79="">
-        <agx-alerts _ngcontent-jia-c79="" _nghost-jia-c41="">
-          <div _ngcontent-jia-c41="" class="alerts-container">
-            <!---->
-          </div>
-        </agx-alerts>
-        <agx-form-navbar _ngcontent-jia-c79="" _nghost-jia-c78="" class="experimental"><a _ngcontent-jia-c78=""
-            class="logo" href="/mach1/home"><img _ngcontent-jia-c78=""
-              src="https://staging.agistix.com/fs/v3/build/images/custom/mach1/logo.png?build=202111011118"
-              alt="mach1"></a>
-          <div _ngcontent-jia-c78="" class="d-flex align-items-center justify-content-end h-100 w-100">
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-jia-c78="" class="global-search-container h-100 flex-grow-1 position-relative">
-              <agx-global-search _ngcontent-jia-c78="" class="w-100 absolute-fit" _nghost-jia-c77="">
-                <!---->
-                <!---->
-                <!---->
-                <!---->
-                <!---->
-                <form _ngcontent-jia-c77="" novalidate="" class="expanded ng-pristine ng-valid ng-touched"><input
-                    _ngcontent-jia-c77="" name="query" autocomplete="off" type="search" typeaheadasync="true"
-                    typeaheadoptionfield="shipmentOrderId"
-                    class="form-control search-control ng-pristine ng-valid ng-touched"
-                    placeholder="Shipment, tracking or reference number" aria-expanded="false" aria-autocomplete="list">
-                  <!---->
-                  <!----><i _ngcontent-jia-c77="" aria-hidden="true" class="icon-search fas fa-search btn-icon"></i>
-                  <!---->
-                  <!---->
-                </form>
-                <!---->
-                <!---->
-              </agx-global-search>
-            </div>
-            <!----><button _ngcontent-jia-c78="" type="button" popperapplyclass="agx-popper,forms-menu-popper"
-              poppertrigger="click" popperboundaries="body" popperplacement="bottom-right"
-              class="btn btn-menu flex-center">
-              <svg-icon _ngcontent-jia-c78=""><svg width="18" height="18" viewBox="0 0 18 18" fill="inherit"
-                  xmlns="http://www.w3.org/2000/svg" _ngcontent-jia-c78="" aria-hidden="true">
-                  <path
-                    d="M15.5 8H2.5C2.22386 8 2 8.22386 2 8.5V9.5C2 9.77614 2.22386 10 2.5 10H15.5C15.7761 10 16 9.77614 16 9.5V8.5C16 8.22386 15.7761 8 15.5 8Z"
-                    _ngcontent-jia-c78=""></path>
-                  <path
-                    d="M15.5 3H2.5C2.22386 3 2 3.22386 2 3.5V4.5C2 4.77614 2.22386 5 2.5 5H15.5C15.7761 5 16 4.77614 16 4.5V3.5C16 3.22386 15.7761 3 15.5 3Z"
-                    _ngcontent-jia-c78=""></path>
-                  <path
-                    d="M15.5 13H2.5C2.22386 13 2 13.2239 2 13.5V14.5C2 14.7761 2.22386 15 2.5 15H15.5C15.7761 15 16 14.7761 16 14.5V13.5C16 13.2239 15.7761 13 15.5 13Z"
-                    _ngcontent-jia-c78=""></path>
-                </svg></svg-icon>
-            </button>
-            <!---->
-            <!---->
-            <popper-content _ngcontent-jia-c78="" class="menu-content">
-              <div class="ngxp__container ngxp__animation agx-popper forms-menu-popper" aria-hidden="true" role="popper"
-                style="display: none; opacity: 0; z-index: 1100;">
-                <!---->
-                <div class="ngxp__inner"><a _ngcontent-jia-c78="" class="dropdown-item" href="/mach1/shipment/request">
-                    <svg-icon _ngcontent-jia-c78="" class="mr-3"><svg width="60px" height="60px" viewBox="0 0 60 60"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        _ngcontent-jia-c78="" aria-hidden="true">
-                        <g id="1---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                          _ngcontent-jia-c78="">
-                          <g id="10-desktop-home-branding-original" transform="translate(-241.000000, -456.000000)"
-                            _ngcontent-jia-c78="">
-                            <g id="buttons---updated" transform="translate(196.000000, 434.000000)"
-                              _ngcontent-jia-c78="">
-                              <g id="shipment-request" transform="translate(0.000000, 0.000000)" _ngcontent-jia-c78="">
-                                <g id="ship-request" transform="translate(44.999905, 22.000000)" _ngcontent-jia-c78="">
-                                  <g id="delivered-box-verification-symbol"
-                                    transform="translate(30.000047, 30.559305) scale(-1, 1) translate(-30.000047, -30.559305) translate(0.000000, 7.000000)"
-                                    fill="#757D92" fill-rule="nonzero" _ngcontent-jia-c78="">
-                                    <path
-                                      d="M29.9036133,12.8742177 L29.9036133,37.5989274 L35.4130364,36.8606688 C35.4130364,38.2868896 35.7068431,39.6021771 36.2944565,40.8065313 L31.4829273,41.6446143 C30.4416526,41.8684379 29.3648877,41.8708888 28.3226327,41.6516731 L7.00615878,37.1678489 C6.6236097,37.0874567 6.34635476,36.7547116 6.33615868,36.3638292 L5.96792333,22.1506897 C5.9563547,21.7049053 6.29360965,21.3271602 6.73772737,21.2881406 L24.844789,19.6970619 C25.1588086,19.6695128 25.4312597,19.4691207 25.5513577,19.1777481 L28.2792013,12.5529431 C28.6311621,11.698041 29.9036133,11.9498058 29.9036133,12.8742177 Z M5.76311937,4.77911839 L0.0809616295,16.9248065 C-0.196685472,17.518336 0.27841264,18.188042 0.930275487,18.1221597 L22.2695925,15.9659829 C22.5711612,15.9354927 22.8332201,15.7456887 22.9561612,15.4686298 L29.8223388,0 L6.37517829,4.30666733 C6.10684492,4.35598107 5.87880566,4.53196149 5.76311937,4.77911839 Z M29.8224368,1.77635684e-15 L37.0877321,15.9521593 C37.2146929,16.2309829 37.4827321,16.4190221 37.7882224,16.44363 L59.0872453,18.1564734 C59.7291081,18.208042 60.1899905,17.550787 59.9227356,16.9649046 L54.3680289,4.78725564 C54.2531269,4.53539286 54.0221465,4.35598107 53.7495974,4.30686341 L29.8224368,1.77635684e-15 Z"
-                                      id="Shape"
-                                      transform="translate(30.000095, 20.907151) scale(-1, 1) translate(-30.000095, -20.907151) "
-                                      _ngcontent-jia-c78=""></path>
-                                    <path class="primary-color"
-                                      d="M11.2671531,24.5842055 C17.4897981,24.5842055 22.5343062,29.6287136 22.5343062,35.8513586 C22.5343062,42.0741016 17.4897981,47.1186097 11.2671531,47.1186097 C5.04450812,47.1186097 0,42.0741016 0,35.8513586 C0,29.6287136 5.04450812,24.5842055 11.2671531,24.5842055 Z M12,29 L11,29 C10.4477153,29 10,29.4477153 10,30 L10,30 L10,34.4992055 L5.5,34.5 C4.98716416,34.5 4.56449284,34.8860402 4.50672773,35.3833789 L4.5,35.5 L4.5,36.5 C4.5,37.0522847 4.94771525,37.5 5.5,37.5 L5.5,37.5 L10,37.4992055 L10,42 C10,42.5128358 10.3860402,42.9355072 10.8833789,42.9932723 L11,43 L12,43 C12.5522847,43 13,42.5522847 13,42 L13,42 L13,37.4992055 L17.5,37.5 C18.0128358,37.5 18.4355072,37.1139598 18.4932723,36.6166211 L18.5,36.5 L18.5,35.5 C18.5,34.9477153 18.0522847,34.5 17.5,34.5 L17.5,34.5 L13,34.4992055 L13,30 C13,29.4871642 12.6139598,29.0644928 12.1166211,29.0067277 L12,29 Z"
-                                      id="plus" _ngcontent-jia-c78=""></path>
-                                  </g>
-                                  <rect id="Rectangle" opacity="0.5" x="9.47509062e-05" y="0" width="60" height="60"
-                                    _ngcontent-jia-c78=""></rect>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></svg-icon> Shipment Request
-                  </a>
-                  <!---->
-                  <!---->
-                  <!----><a _ngcontent-jia-c78="" class="dropdown-item" href="/mach1/tracker">
-                    <svg-icon _ngcontent-jia-c78="" class="mr-3"><svg width="60px" height="60px" viewBox="0 0 60 60"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        _ngcontent-jia-c78="" aria-hidden="true">
-                        <g id="1---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                          _ngcontent-jia-c78="">
-                          <g id="10-desktop-home-branding-original" transform="translate(-1141.000000, -454.000000)"
-                            _ngcontent-jia-c78="">
-                            <g id="buttons---updated" transform="translate(196.000000, 434.000000)"
-                              _ngcontent-jia-c78="">
-                              <g id="shipment-tracking" transform="translate(900.000000, 0.000000)"
-                                _ngcontent-jia-c78="">
-                                <g id="ship-tracking" transform="translate(45.000000, 20.000000)" _ngcontent-jia-c78="">
-                                  <g id="tracking" transform="translate(0.000000, 7.000000)" fill="#757D92"
-                                    fill-rule="nonzero" _ngcontent-jia-c78="">
-                                    <path
-                                      d="M50.6192914,26.562212 L59.8578234,45.5407468 C60.2335098,46.3126097 59.8386077,46.9440805 58.9801761,46.9440805 L1.01986565,46.9440805 C0.16143404,46.9440805 -0.233566071,46.3126097 0.142218348,45.5407468 L9.3808484,26.562212 C9.52780922,26.2603492 9.92280933,26.0132903 10.2584957,26.0132903 L18.1801646,26.0132903 C18.4242823,26.0132903 18.7539883,26.1661335 18.9137923,26.3507414 C19.4512434,26.97182 19.9986945,27.5785849 20.544577,28.1791733 C21.0630085,28.7492715 21.5841852,29.3268206 22.1012441,29.9178992 L12.7001631,29.9178992 C12.3643786,29.9178992 11.9693785,30.1648601 11.8225158,30.466821 L5.70231795,43.0395696 L54.2974297,43.0395696 L48.1777221,30.466821 C48.0308593,30.1648601 47.6358592,29.9178992 47.2999767,29.9178992 L37.8776211,29.9178992 C38.394582,29.3268206 38.9159547,28.7492715 39.4343863,28.1791733 C39.9819354,27.5768202 40.5324258,26.9712318 41.0711514,26.3499571 C41.2307593,26.1658394 41.559779,26.0132903 41.8035046,26.0132903 L49.7418401,26.0132903 C50.0774285,26.0132903 50.4723305,26.2601531 50.6192914,26.562212 Z"
-                                      id="Shape" _ngcontent-jia-c78=""></path>
-                                    <path class="primary-color"
-                                      d="M43.5825247,13.5924045 C43.5825247,23.9626035 34.949385,25.907506 30.8891878,35.8732931 C30.5592857,36.6830972 29.4191874,36.6789796 29.0891873,35.8693715 C25.4265392,26.8839768 18.046243,24.4199565 16.6341838,16.4152484 C15.2438893,8.53495206 20.6999692,0.815734199 28.6664421,0.0626947716 C36.7684051,-0.703187797 43.5825247,5.64887281 43.5825247,13.5924045 Z M37.1681111,13.5924045 C37.1681111,9.62808962 33.9544828,6.41436322 29.9900699,6.41436322 C26.025657,6.41436322 22.8120286,9.62808962 22.8120286,13.5924045 C22.8120286,17.5568173 26.025657,20.7704457 29.9900699,20.7704457 C33.9544828,20.7704457 37.1681111,17.5568173 37.1681111,13.5924045 Z"
-                                      id="Shape" _ngcontent-jia-c78=""></path>
-                                  </g>
-                                  <rect id="Rectangle" opacity="0.300000012" x="0" y="0" width="60" height="60"
-                                    _ngcontent-jia-c78=""></rect>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></svg-icon> Shipment Tracking
-                  </a>
-                  <!---->
-                  <!---->
-                  <!----><a _ngcontent-jia-c78="" class="dropdown-item" href="/mach1/transit-update">
-                    <svg-icon _ngcontent-jia-c78="" class="mr-3"><svg width="60px" height="60px" viewBox="0 0 60 60"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        _ngcontent-jia-c78="" aria-hidden="true">
-                        <g id="1---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                          _ngcontent-jia-c78="">
-                          <g id="10-desktop-home-branding-original" transform="translate(-781.000000, -454.000000)"
-                            _ngcontent-jia-c78="">
-                            <g id="buttons---updated" transform="translate(196.000000, 434.000000)"
-                              _ngcontent-jia-c78="">
-                              <g id="transit-update-hover" transform="translate(540.000000, 0.000000)"
-                                _ngcontent-jia-c78="">
-                                <g id="transit-update" transform="translate(45.000000, 20.000000)"
-                                  _ngcontent-jia-c78="">
-                                  <g transform="translate(0.000000, 1.000000)" fill="#757D92" fill-rule="nonzero"
-                                    _ngcontent-jia-c78="">
-                                    <path
-                                      d="M56.9153602,35.1133124 C57.705656,35.8778239 57.98399,37.0289049 57.6418324,38.0738091 C53.8351573,49.7038347 42.8823882,58.1289512 30.0041246,58.1289512 C20.0197889,58.1289512 10.8866316,53.0854107 5.56309051,44.7945102 C5.33377628,44.4373525 4.90377534,44.2668619 4.49563719,44.3832347 L1.22425745,45.3154917 C0.513275497,45.5181392 -0.150353411,44.8749025 0.0299411022,44.1578421 L2.85994732,32.9050723 L3.41632109,30.6793811 C3.59563521,29.9620266 4.48465677,29.7081045 5.01583441,30.2226154 L7.78554637,32.9051703 L15.0018367,39.8908719 C15.5329163,40.4049907 15.30821,41.3011691 14.5975221,41.5040127 L10.9830044,42.5357797 C15.313308,48.6616755 22.3514607,52.3679582 30.0041246,52.3679582 C40.3319904,52.3679582 49.110245,45.6177473 52.1539772,36.2962562 C52.8171159,34.2651733 55.3293763,33.5792894 56.8650659,35.0646849 L56.9153602,35.1133124 Z M54.8247673,13.9321875 C49.5533832,5.29059986 40.2204215,0 30.0042226,0 C17.1168414,0 6.17230753,8.42531262 2.36641682,20.0553382 C2.02445529,21.1003405 2.30269119,22.2512253 3.09308509,23.0156388 L3.14288912,23.0638742 C4.67877484,24.5493676 7.1911333,23.8631897 7.85417397,21.8319107 C10.8961414,12.5108118 19.6683176,5.76109109 30.0042226,5.76109109 C37.6471806,5.76109109 44.6853333,9.45776587 49.015735,15.5836617 L45.4011192,16.6154287 C44.6903333,16.8182722 44.465823,17.7144507 44.9968046,18.2286675 L52.2227028,25.2238789 L54.9923167,27.9065319 C55.5236904,28.4210428 56.4125159,28.1671207 56.5919281,27.4496681 L57.1483999,25.223977 L59.9702688,13.9612071 C60.1498771,13.2442448 59.4861501,12.6016943 58.7753643,12.8045379 L54.8247673,13.9321875 Z"
-                                      id="update" _ngcontent-jia-c78=""></path>
-                                    <path class="primary-color"
-                                      d="M42.9920727,25.7748429 C42.9920727,35.1561355 35.1821927,36.9155713 31.5091775,45.9310169 C31.2107351,46.6635978 30.1793569,46.6598728 29.8808258,45.9274693 C26.5674493,37.7989255 19.8909412,35.5698752 18.6135365,28.3284992 C17.355821,21.1996712 22.291607,14.2165611 29.4983937,13.5353318 C36.8277503,12.8424841 42.9920727,18.5888096 42.9920727,25.7748429 Z M30.6957999,19.2813026 C27.109435,19.2813026 24.2022596,22.1885667 24.2022596,25.7748429 C24.2022596,29.3612077 27.109435,32.2683832 30.6957999,32.2683832 C34.2821647,32.2683832 37.1893402,29.3612077 37.1893402,25.7748429 C37.1893402,22.1885667 34.2821647,19.2813026 30.6957999,19.2813026 Z"
-                                      id="location" _ngcontent-jia-c78=""></path>
-                                  </g>
-                                  <rect id="Rectangle" opacity="0.300000012" x="0" y="0" width="60" height="60"
-                                    _ngcontent-jia-c78=""></rect>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></svg-icon> Transit Update
-                  </a>
-                  <!---->
-                  <!---->
-                  <!----><a _ngcontent-jia-c78="" class="dropdown-item" href="/mach1/simple-transit-update">
-                    <svg-icon _ngcontent-jia-c78="" class="mr-3"><svg width="60px" height="60px" viewBox="0 0 60 60"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        _ngcontent-jia-c78="" aria-hidden="true">
-                        <g id="1---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                          _ngcontent-jia-c78="">
-                          <g id="10-desktop-home-branding-original" transform="translate(-781.000000, -454.000000)"
-                            _ngcontent-jia-c78="">
-                            <g id="buttons---updated" transform="translate(196.000000, 434.000000)"
-                              _ngcontent-jia-c78="">
-                              <g id="transit-update-hover" transform="translate(540.000000, 0.000000)"
-                                _ngcontent-jia-c78="">
-                                <g id="transit-update" transform="translate(45.000000, 20.000000)"
-                                  _ngcontent-jia-c78="">
-                                  <g transform="translate(0.000000, 1.000000)" fill="#757D92" fill-rule="nonzero"
-                                    _ngcontent-jia-c78="">
-                                    <path
-                                      d="M56.9153602,35.1133124 C57.705656,35.8778239 57.98399,37.0289049 57.6418324,38.0738091 C53.8351573,49.7038347 42.8823882,58.1289512 30.0041246,58.1289512 C20.0197889,58.1289512 10.8866316,53.0854107 5.56309051,44.7945102 C5.33377628,44.4373525 4.90377534,44.2668619 4.49563719,44.3832347 L1.22425745,45.3154917 C0.513275497,45.5181392 -0.150353411,44.8749025 0.0299411022,44.1578421 L2.85994732,32.9050723 L3.41632109,30.6793811 C3.59563521,29.9620266 4.48465677,29.7081045 5.01583441,30.2226154 L7.78554637,32.9051703 L15.0018367,39.8908719 C15.5329163,40.4049907 15.30821,41.3011691 14.5975221,41.5040127 L10.9830044,42.5357797 C15.313308,48.6616755 22.3514607,52.3679582 30.0041246,52.3679582 C40.3319904,52.3679582 49.110245,45.6177473 52.1539772,36.2962562 C52.8171159,34.2651733 55.3293763,33.5792894 56.8650659,35.0646849 L56.9153602,35.1133124 Z M54.8247673,13.9321875 C49.5533832,5.29059986 40.2204215,0 30.0042226,0 C17.1168414,0 6.17230753,8.42531262 2.36641682,20.0553382 C2.02445529,21.1003405 2.30269119,22.2512253 3.09308509,23.0156388 L3.14288912,23.0638742 C4.67877484,24.5493676 7.1911333,23.8631897 7.85417397,21.8319107 C10.8961414,12.5108118 19.6683176,5.76109109 30.0042226,5.76109109 C37.6471806,5.76109109 44.6853333,9.45776587 49.015735,15.5836617 L45.4011192,16.6154287 C44.6903333,16.8182722 44.465823,17.7144507 44.9968046,18.2286675 L52.2227028,25.2238789 L54.9923167,27.9065319 C55.5236904,28.4210428 56.4125159,28.1671207 56.5919281,27.4496681 L57.1483999,25.223977 L59.9702688,13.9612071 C60.1498771,13.2442448 59.4861501,12.6016943 58.7753643,12.8045379 L54.8247673,13.9321875 Z"
-                                      id="update" _ngcontent-jia-c78=""></path>
-                                    <path class="primary-color"
-                                      d="M42.9920727,25.7748429 C42.9920727,35.1561355 35.1821927,36.9155713 31.5091775,45.9310169 C31.2107351,46.6635978 30.1793569,46.6598728 29.8808258,45.9274693 C26.5674493,37.7989255 19.8909412,35.5698752 18.6135365,28.3284992 C17.355821,21.1996712 22.291607,14.2165611 29.4983937,13.5353318 C36.8277503,12.8424841 42.9920727,18.5888096 42.9920727,25.7748429 Z M30.6957999,19.2813026 C27.109435,19.2813026 24.2022596,22.1885667 24.2022596,25.7748429 C24.2022596,29.3612077 27.109435,32.2683832 30.6957999,32.2683832 C34.2821647,32.2683832 37.1893402,29.3612077 37.1893402,25.7748429 C37.1893402,22.1885667 34.2821647,19.2813026 30.6957999,19.2813026 Z"
-                                      id="location" _ngcontent-jia-c78=""></path>
-                                  </g>
-                                  <rect id="Rectangle" opacity="0.300000012" x="0" y="0" width="60" height="60"
-                                    _ngcontent-jia-c78=""></rect>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></svg-icon> Simple Transit Update
-                  </a>
-                  <!---->
-                  <!---->
-                  <!---->
-                  <!---->
+<body ontouchstart="">
+  <agx-forms-root _nghost-biu-c14="" ng-version="12.2.10">
+    <block-ui _ngcontent-biu-c14="" name="root">
+      <router-outlet _ngcontent-biu-c14=""></router-outlet>
+      <agx-forms-host _nghost-biu-c79="">
+        <router-outlet _ngcontent-biu-c79=""></router-outlet>
+        <agx-simple-transit-update _nghost-biu-c167="">
+          <div _ngcontent-biu-c167="" class="form-container">
+            <form _ngcontent-biu-c167="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+              <fieldset _ngcontent-biu-c167="" class="d-flex flex-wrap mb-4">
+                <div _ngcontent-biu-c167="" class="experimental-col">
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="signedBy"> Autocomplete
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="signedBy" autocomplete="off"
+                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="signedBy"> Active
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control experimental-form-control-active w-100 ng-untouched ng-pristine ng-valid" id="signedBy"
+                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
                 </div>
-                <!---->
-                <div class="ngxp__arrow"></div>
-              </div>
-            </popper-content>
-            <!---->
-          </div>
-        </agx-form-navbar>
-        <router-outlet _ngcontent-jia-c79=""></router-outlet>
-        <agx-simple-transit-update _nghost-jia-c165="">
-          <div _ngcontent-jia-c165="" class="form-container">
-            <form _ngcontent-jia-c165="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
-              <div _ngcontent-jia-c165="" class="d-flex mb-1"><span _ngcontent-jia-c165=""
-                  class="info-label text-truncate pr-2" title="Tracking No."> Tracking No. </span><b
-                  _ngcontent-jia-c165="">S01313908</b></div>
-              <fieldset _ngcontent-jia-c165="" class="d-flex flex-wrap mb-4">
-                <div _ngcontent-jia-c165="" class="experimental-col">
-                  <div _ngcontent-jia-c165="" class="mb-3"><button _ngcontent-jia-c165="" type="button"
-                      class="experimental-btn w-100">
-                      <svg-icon _ngcontent-jia-c165="" src="assets/icons/signature.svg" class="mr-2"><svg width="100%"
-                          height="100%" viewBox="0 0 19 18" fill="inherit" xmlns="http://www.w3.org/2000/svg"
-                          _ngcontent-jia-c165="" aria-hidden="true">
-                          <g clip-path="url(#clip0)" _ngcontent-jia-c165="">
-                            <path
-                              d="M14.5116 2.18C14.5983 2.08668 14.6447 1.96291 14.6407 1.83558C14.6366 1.70825 14.5825 1.58765 14.4901 1.5C14.4028 1.40678 14.2821 1.35205 14.1544 1.34785C14.0268 1.34365 13.9027 1.39032 13.8095 1.4776L13.8091 1.478C13.788 1.50081 13.7683 1.52485 13.7501 1.55L13.7446 1.543L9.37458 5.911L9.38058 5.919C9.35393 5.93559 9.32956 5.95559 9.30808 5.9785C9.25882 6.02734 9.22034 6.08596 9.19512 6.15058C9.16989 6.2152 9.15849 6.28438 9.16165 6.35368C9.1648 6.42298 9.18244 6.49084 9.21343 6.5529C9.24442 6.61496 9.28807 6.66984 9.34156 6.714C9.39506 6.75816 9.45722 6.79062 9.52403 6.80929C9.59083 6.82796 9.66081 6.83241 9.72945 6.82238C9.79809 6.81235 9.86386 6.78804 9.92253 6.75103C9.9812 6.71402 10.0315 6.66513 10.0701 6.6075L10.0766 6.614L14.4461 2.2455L14.4386 2.2385C14.4651 2.22187 14.4896 2.20224 14.5116 2.18Z"
-                              _ngcontent-jia-c165=""></path>
-                            <path
-                              d="M15.4 2.9415C15.04 3.302 10.6315 7.764 10.606 7.7915C10.4306 7.90516 10.2266 7.96685 10.0176 7.96941C9.80861 7.97198 9.60315 7.91532 9.42501 7.806L9.04151 7.4435L3.64301 12.737C3.57339 12.8056 3.51785 12.8871 3.47951 12.977L2.54401 16.18C2.5288 16.2148 2.52452 16.2534 2.53174 16.2907C2.53896 16.328 2.55734 16.3622 2.58445 16.3889C2.61155 16.4155 2.64611 16.4332 2.68353 16.4398C2.72095 16.4463 2.75948 16.4413 2.79401 16.4255L6.00801 15.45C6.09376 15.4126 6.17177 15.3596 6.23801 15.2935L17.03 4.5395L15.4 2.9415Z"
-                              _ngcontent-jia-c165=""></path>
-                            <path
-                              d="M15.9069 2.086L17.4599 3.564C17.5758 3.28744 17.599 2.98085 17.5263 2.68997C17.4536 2.39909 17.2888 2.13952 17.0564 1.95C16.8611 1.72429 16.6082 1.5558 16.3247 1.46246C16.0412 1.36913 15.7376 1.35445 15.4464 1.42C15.3569 1.452 15.4789 1.57 15.5154 1.6075C15.5519 1.645 15.8829 2.038 15.9069 2.086Z"
-                              _ngcontent-jia-c165=""></path>
-                            <path
-                              d="M2.36138 13.743C0.834882 9.2135 2.51138 5.277 6.72438 2.9885C7.35888 2.6435 6.85838 1.6355 6.21938 1.9825C1.59488 4.496 -0.0386181 8.7025 1.64288 13.75C2.36138 15.907 2.36138 13.743 2.36138 13.743Z"
-                              _ngcontent-jia-c165=""></path>
-                          </g>
-                          <defs _ngcontent-jia-c165="">
-                            <clipPath id="clip0" _ngcontent-jia-c165="">
-                              <rect width="18" height="18" fill="white" transform="translate(0.5)"
-                                _ngcontent-jia-c165=""></rect>
-                            </clipPath>
-                          </defs>
-                        </svg></svg-icon> Get signature
-                      <!---->
-                    </button></div>
-                </div>
-                <div _ngcontent-jia-c165="" class="experimental-col">
-                  <agx-select-control _ngcontent-jia-c165="" _nghost-jia-c163="">
-                    <agx-form-control-wrapper _ngcontent-jia-c163="" _nghost-jia-c157="">
-                      <div _ngcontent-jia-c157="" class="mb-3">
-                        <div _ngcontent-jia-c157="" class="flex-column-center mb-1"><label _ngcontent-jia-c157=""
-                            class="mb-0 font-italic mr-auto" for="transitException"> Exception status
+                <div _ngcontent-biu-c167="" class="experimental-col">
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="city"> Tabindex
                             <!----></label>
-                          <button _ngcontent-jia-c157="" type="button"
-                              class="experimental-btn">
-                              <svg-icon _ngcontent-jia-c157="" src="assets/icons/plus.svg" class="mr-2"><svg
-                                  width="100%" height="100%" viewBox="0 0 18 18" fill="inherit"
-                                  xmlns="http://www.w3.org/2000/svg" _ngcontent-jia-c157="" aria-hidden="true">
-                                  <path
-                                    d="M14.5 8H10V3.5C10 3.36739 9.94732 3.24021 9.85355 3.14645C9.75979 3.05268 9.63261 3 9.5 3H8.5C8.36739 3 8.24021 3.05268 8.14645 3.14645C8.05268 3.24021 8 3.36739 8 3.5V8H3.5C3.36739 8 3.24021 8.05268 3.14645 8.14645C3.05268 8.24021 3 8.36739 3 8.5V9.5C3 9.63261 3.05268 9.75979 3.14645 9.85355C3.24021 9.94732 3.36739 10 3.5 10H8V14.5C8 14.6326 8.05268 14.7598 8.14645 14.8536C8.24021 14.9473 8.36739 15 8.5 15H9.5C9.63261 15 9.75979 14.9473 9.85355 14.8536C9.94732 14.7598 10 14.6326 10 14.5V10H14.5C14.6326 10 14.7598 9.94732 14.8536 9.85355C14.9473 9.75979 15 9.63261 15 9.5V8.5C15 8.36739 14.9473 8.24021 14.8536 8.14645C14.7598 8.05268 14.6326 8 14.5 8Z"
-                                    _ngcontent-jia-c157=""></path>
-                                </svg></svg-icon> Add
-                            </button>
-                            <!---->
                           <!---->
                         </div>
                         <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="city" tabindex="0"
+                            type="text"><label _ngcontent-biu-c157="" for="city">
+                            <!----></label></div>
                         <!---->
                         <!---->
                       </div>
                       <!---->
                     </agx-form-control-wrapper>
-                    <!---->
-                    <!---->
-                  </agx-select-control>
-                  <agx-checkboxset-control _ngcontent-jia-c165="" _nghost-jia-c164="">
-                    <agx-form-control-wrapper _ngcontent-jia-c164="" _nghost-jia-c157="">
-                      <div _ngcontent-jia-c157="" class="mb-3">
-                        <div _ngcontent-jia-c157="" class="flex-column-center mb-1"><label _ngcontent-jia-c157=""
-                            class="mb-0 font-italic mr-auto" for="accessorial"> Accessorial used
-                            <!----></label>
-                          <button _ngcontent-jia-c157="" type="button"
-                              class="experimental-btn" style="flex-grow: 0;">
-                              <svg-icon _ngcontent-jia-c157="" src="assets/icons/plus.svg" class="mr-2"><svg
-                                  width="100%" height="100%" viewBox="0 0 18 18" fill="inherit"
-                                  xmlns="http://www.w3.org/2000/svg" _ngcontent-jia-c157="" aria-hidden="true">
-                                  <path
-                                    d="M14.5 8H10V3.5C10 3.36739 9.94732 3.24021 9.85355 3.14645C9.75979 3.05268 9.63261 3 9.5 3H8.5C8.36739 3 8.24021 3.05268 8.14645 3.14645C8.05268 3.24021 8 3.36739 8 3.5V8H3.5C3.36739 8 3.24021 8.05268 3.14645 8.14645C3.05268 8.24021 3 8.36739 3 8.5V9.5C3 9.63261 3.05268 9.75979 3.14645 9.85355C3.24021 9.94732 3.36739 10 3.5 10H8V14.5C8 14.6326 8.05268 14.7598 8.14645 14.8536C8.24021 14.9473 8.36739 15 8.5 15H9.5C9.63261 15 9.75979 14.9473 9.85355 14.8536C9.94732 14.7598 10 14.6326 10 14.5V10H14.5C14.6326 10 14.7598 9.94732 14.8536 9.85355C14.9473 9.75979 15 9.63261 15 9.5V8.5C15 8.36739 14.9473 8.24021 14.8536 8.14645C14.7598 8.05268 14.6326 8 14.5 8Z"
-                                    _ngcontent-jia-c157=""></path>
-                                </svg></svg-icon> Add
-                            </button>
-                            <!---->
-                          <!---->
-                        </div>
-                        <!---->
-                        <!---->
-                        <!---->
-                      </div>
-                      <!---->
-                    </agx-form-control-wrapper>
-                  </agx-checkboxset-control>
-                  <agx-textarea-control _ngcontent-jia-c165="">
-                    <agx-form-control-wrapper _nghost-jia-c157="">
-                      <div _ngcontent-jia-c157="" class="mb-3">
-                        <div _ngcontent-jia-c157="" class="flex-column-center mb-1"><label _ngcontent-jia-c157=""
-                            class="mb-0 font-italic" for="notes"> Notes
-                            <!----></label>
-                          <div _ngcontent-jia-c157="" class="ml-auto"><button _ngcontent-jia-c157="" type="button"
-                              class="experimental-btn">
-                              <svg-icon _ngcontent-jia-c157="" src="assets/icons/plus.svg" class="mr-2"><svg
-                                  width="100%" height="100%" viewBox="0 0 18 18" fill="inherit"
-                                  xmlns="http://www.w3.org/2000/svg" _ngcontent-jia-c157="" aria-hidden="true">
-                                  <path
-                                    d="M14.5 8H10V3.5C10 3.36739 9.94732 3.24021 9.85355 3.14645C9.75979 3.05268 9.63261 3 9.5 3H8.5C8.36739 3 8.24021 3.05268 8.14645 3.14645C8.05268 3.24021 8 3.36739 8 3.5V8H3.5C3.36739 8 3.24021 8.05268 3.14645 8.14645C3.05268 8.24021 3 8.36739 3 8.5V9.5C3 9.63261 3.05268 9.75979 3.14645 9.85355C3.24021 9.94732 3.36739 10 3.5 10H8V14.5C8 14.6326 8.05268 14.7598 8.14645 14.8536C8.24021 14.9473 8.36739 15 8.5 15H9.5C9.63261 15 9.75979 14.9473 9.85355 14.8536C9.94732 14.7598 10 14.6326 10 14.5V10H14.5C14.6326 10 14.7598 9.94732 14.8536 9.85355C14.9473 9.75979 15 9.63261 15 9.5V8.5C15 8.36739 14.9473 8.24021 14.8536 8.14645C14.7598 8.05268 14.6326 8 14.5 8Z"
-                                    _ngcontent-jia-c157=""></path>
-                                </svg></svg-icon> Add
-                            </button>
-                            <!---->
-                          </div>
-                          <!---->
-                        </div>
-                        <!---->
-                        <!---->
-                        <!---->
-                      </div>
-                      <!---->
-                    </agx-form-control-wrapper>
-                  </agx-textarea-control>
+                  </agx-input-control>
                 </div>
               </fieldset>
-              <div _ngcontent-jia-c165="" class="text-right"><button _ngcontent-jia-c165="" type="submit"
-                  class="experimental-btn experimental-btn-primary">Submit status update</button></div>
             </form>
             <!---->
+            <!---->
+            <!---->
           </div>
+          <!---->
           <!---->
         </agx-simple-transit-update>
         <!---->
-        <agx-app-version _ngcontent-jia-c79="" _nghost-jia-c43=""><span _ngcontent-jia-c43=""
-            class="apps-versions"><span _ngcontent-jia-c43="" class="text-nowrap"> Server: 2021.23.0-SNAPSHOT-7e05a1835e
-              <span _ngcontent-jia-c43="" class="d-none d-xl-inline">2021-11-01 11:18:46</span></span> &nbsp; <span
-              _ngcontent-jia-c43="" class="text-nowrap"> Client: 2021.23.0-SNAPSHOT-f04a762 <span _ngcontent-jia-c43=""
-                class="d-none d-xl-inline">2021-11-01 11:09:50</span></span></span>
-          <div _ngcontent-jia-c43="" class="text-center mx-auto"><a _ngcontent-jia-c43=""
-              class="cursor-pointer">Support</a><a _ngcontent-jia-c43="" target="_blank" rel="noopener"
-              href="mailto:feedback@agistix.com?subject=Agistix Feedback">Feedback</a>
-            <!---->
-          </div>
-          <!----><span _ngcontent-jia-c43="" class="copyright text-right ml-auto d-inline d-xs-none"> Copyright ©
-            2009-2021 Agistix Inc., All Rights Reserved
-          </span>
-        </agx-app-version>
       </agx-forms-host>
       <!---->
-      <agx-modal-host _ngcontent-jia-c14="" _nghost-jia-c13="">
-        <!---->
-      </agx-modal-host>
-      <block-ui-content>
-        <div class="block-ui-wrapper root">
-          <!---->
-          <div _ngcontent-jia-c14="" class="agx-loader page-loader">
-            <div _ngcontent-jia-c14="" class="ag-loading-dots">
-              <div _ngcontent-jia-c14=""></div>
-              <div _ngcontent-jia-c14=""></div>
-              <div _ngcontent-jia-c14=""></div>
-            </div>
-          </div>
-          <!---->
-          <!---->
-        </div>
-      </block-ui-content>
     </block-ui>
     <!---->
   </agx-forms-root>
-  <script src="runtime.ae1397211ee61abf5120.js" defer=""></script>
-  <script src="polyfills-es5.590eb404209864314016.js" nomodule="" defer=""></script>
-  <script src="polyfills.e5eb71c390a033830788.js" defer=""></script>
-  <script src="main.041939ff9109c6f5a682.js" defer=""></script>
-
-  <script type="text/javascript" async="" defer="" id="agmGoogleMapsApiScript"
-    src="https://maps.googleapis.com/maps/api/js?v=quarterly&amp;callback=agmLazyMapsAPILoader&amp;key=AIzaSyDCDefirQ7egggAXFuhjg7gZmXqiGorbPc">
-  </script>
 </body>
 
 </html>
