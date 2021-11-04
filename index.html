@@ -1,38 +1,1590 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safari</title>
-    <style>
-        .experimental-form-control {
-            background-color: #FFF;
-            border: 1px solid #CCC;
-            border-radius: 4px;
-            color: #000;
-            padding: 0 8px;
-        }
 
-        .experimental-form-control:focus,
-        .experimental-form-control:active {
-          background-color: #fff !important;
-          border-color: transparent !important;
-          -webkit-box-shadow: 0 0 2px #12CFCF !important;
-          -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
-          box-shadow: 0 0 2px #12CFCF !important;
-          box-shadow: 0 0 0 2px #12CFCF !important;
-          outline: none !important;
-        }
-    </style>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="utf-8">
+  <title>Agistix Forms</title>
+  <base href="https://forms-ps-staging.agistix.com/">
+  <link rel="preconnect" crossorigin="" href="https://kc-staging.agistix.com">
+  <link rel="preconnect" crossorigin="" href="https://staging.agistix.com">
+  <link rel="preconnect" crossorigin="" href="https://fonts.googleapis.com">
+  <link rel="preconnect" crossorigin="" href="https://maps.googleapis.com">
+  <link rel="preconnect" crossorigin="" href="https://www.google-analytics.com">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd10.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpmJxAcu.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuJJmJxAcu.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z6JxAcu.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDckd10Pey7i3m4AWA.woff) format('woff');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd10Pey7i3m4.woff) format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://fonts.gstatic.com/s/publicsans/v7/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <link rel="fontIcon" type="image/x-fontIcon" href="favicon.ico">
+  <meta data-kcorigin="https://kc-staging.agistix.com">
+  <meta data-fsorigin="https://staging.agistix.com">
+  <meta data-driverapporigin="https://driver-staging.agistix.com">
+  <meta data-isproduction="false">
+
+  <!-- End Google Map API Key -->
+  <style>
+    @charset "UTF-8";
+
+    :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #6594c2;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #e6bc5c;
+      --danger: #dc3545;
+      --light: #f2f4f7;
+      --dark: #3d4251;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    @media print {
+
+      *,
+      :after,
+      :before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+      }
+
+      @page {
+        size: a3;
+      }
+
+      body {
+        min-width: 992px !important;
+      }
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+      margin: 0;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    :root {
+      --aside-panel-width: 300px;
+      --aside-header-height: 50px;
+      --aside-header-font: normal normal 500 18px/24px var(--font-family);
+      --aside-header-icon-font-size: 1rem;
+      --aside-header-icon-opacity: 0.7;
+      --modal-z-index: 1200;
+    }
+
+    body,
+    html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    html {
+      font-size: 13px;
+    }
+
+    :root {
+      --font-family: Roboto, sans-serif;
+    }
+
+    html {
+      font: var(--body-font);
+      color: var(--body-color);
+    }
+  </style>
+  <link rel="stylesheet" href="styles.c9d72974ea1a154a35f8.css" media="all" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles.c9d72974ea1a154a35f8.css"></noscript>
+  <style>
+    [_nghost-biu-c14] {
+      display: block;
+      height: 100%;
+      overflow: hidden;
+      width: 100%
+    }
+  </style>
+  <style></style>
+  <style>
+    .block-ui-wrapper {
+      display: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.70);
+      z-index: 30000;
+      cursor: wait;
+    }
+
+    .block-ui-wrapper.block-ui-wrapper--element {
+      position: absolute;
+    }
+
+    .block-ui-wrapper.active {
+      display: block;
+    }
+
+    .block-ui-wrapper.block-ui-main {
+      position: fixed;
+    }
+
+    .block-ui-spinner,
+    .block-ui-template {
+      position: absolute;
+      top: 40%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    .block-ui-spinner>.message {
+      font-size: 1.3em;
+      text-align: center;
+      color: #fff;
+    }
+
+    .block-ui__element {
+      position: relative;
+    }
+
+    .loader,
+    .loader:after {
+      border-radius: 50%;
+      width: 10em;
+      height: 10em;
+    }
+
+    .loader {
+      margin: 7px auto;
+      font-size: 5px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+      border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+      border-left: 1.1em solid #ffffff;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear;
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <link id="theme" type="text/css" rel="stylesheet" href="assets/themes/experimental.css?build=20211104081436">
+  <link id="color-scheme" type="text/css" rel="stylesheet" href="assets/color-schemes/abc.css?build=20211104081436">
+  <style>
+    [_nghost-biu-c79] {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      height: 100%;
+      position: relative
+    }
+
+    agx-app-version[_ngcontent-biu-c79] {
+      margin-top: auto
+    }
+  </style>
+  <style>
+    .alerts-container[_ngcontent-biu-c41] {
+      position: fixed;
+      top: 0;
+      z-index: 1210;
+      right: 0;
+      margin: 10px
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] {
+      padding: .4rem .5rem .4rem 1rem;
+      color: #fff;
+      border-radius: 2px;
+      min-width: 500px;
+      max-width: 500px
+    }
+
+    @media (max-width: 575.98px) {
+      .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] {
+        min-width: auto;
+        width: calc(100vw - 20px)
+      }
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-success[_ngcontent-biu-c41] {
+      background-color: #59b377;
+      border-color: #59b377
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-warning[_ngcontent-biu-c41] {
+      background-color: #e6bc5c;
+      border-color: #e6bc5c
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-danger[_ngcontent-biu-c41] {
+      background-color: #b23541;
+      border-color: #b23541
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert.alert-info[_ngcontent-biu-c41] {
+      background-color: #17a2b8;
+      border-color: #17a2b8
+    }
+
+    .alerts-container[_ngcontent-biu-c41] .alert[_ngcontent-biu-c41] i[_ngcontent-biu-c41] {
+      align-self: flex-start;
+      cursor: pointer;
+      font-size: 11px;
+      margin-left: 1rem;
+      position: relative;
+      top: 4px
+    }
+  </style>
+  <style>
+    [_nghost-biu-c78] {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--page-header-padding);
+      align-items: center;
+      background: var(--page-header-bg);
+      height: var(--page-header-height);
+      color: var(--page-header-color);
+      flex-shrink: 0
+    }
+
+    @media only screen and (max-width: 768px) {
+      [_nghost-biu-c78] {
+        padding: var(--page-header-mobile-padding)
+      }
+    }
+
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:hover {
+      background-color: var(--primary-color)
+    }
+
+    .experimental[_nghost-biu-c78] .btn-menu.active[_ngcontent-biu-c78],
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:active,
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:focus {
+      box-shadow: var(--focus-box-shadow);
+      border-radius: 4px;
+      fill: var(--page-header-button-color)
+    }
+
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:active {
+      background-color: var(--main-darker-color)
+    }
+
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78],
+    .experimental[_nghost-biu-c78] .action-item[_ngcontent-biu-c78] {
+      transition: none
+    }
+
+    .experimental[_nghost-biu-c78] .btn-menu[_ngcontent-biu-c78]:hover,
+    .experimental[_nghost-biu-c78] .action-item[_ngcontent-biu-c78]:hover {
+      transform: none
+    }
+
+    .experimental[_nghost-biu-c78] .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] {
+      padding: 11px 16px
+    }
+
+    .experimental[_nghost-biu-c78] .global-search-container[_ngcontent-biu-c78] {
+      margin: 0 16px;
+      border-radius: 4px;
+      border: none;
+      max-width: 550px;
+      justify-content: flex-end
+    }
+
+    .logo[_ngcontent-biu-c78],
+    .logo[_ngcontent-biu-c78] img[_ngcontent-biu-c78] {
+      height: var(--page-header-logo-height);
+      width: var(--page-header-logo-width)
+    }
+
+    .btn-menu[_ngcontent-biu-c78] {
+      fill: var(--page-header-button-color);
+      width: var(--page-header-menu-width);
+      height: var(--page-header-menu-height);
+      padding: var(--page-header-menu-padding);
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      z-index: 1200
+    }
+
+    .btn-menu.active[_ngcontent-biu-c78] {
+      fill: var(--primary)
+    }
+
+    .action-item[_ngcontent-biu-c78] {
+      color: var(--page-header-button-color);
+      cursor: pointer;
+      font-size: 1.25rem
+    }
+
+    .btn-menu[_ngcontent-biu-c78],
+    .action-item[_ngcontent-biu-c78] {
+      transition: transform .2s ease-in-out
+    }
+
+    .btn-menu[_ngcontent-biu-c78]:hover,
+    .action-item[_ngcontent-biu-c78]:hover {
+      transform: scale(1.1)
+    }
+
+    .menu-content[_ngcontent-biu-c78] {
+      color: var(--page-header-menu-content-color);
+      font: var(--body-font)
+    }
+
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] {
+      color: inherit;
+      display: flex;
+      align-items: center;
+      white-space: normal;
+      padding: 4px 0
+    }
+
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78] svg[_ngcontent-biu-c78] {
+      fill: var(--page-header-menu-content-color)
+    }
+
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78]:hover {
+      text-decoration: underline;
+      background-color: transparent
+    }
+
+    .menu-content[_ngcontent-biu-c78] .dropdown-item[_ngcontent-biu-c78]:hover svg[_ngcontent-biu-c78] {
+      fill: var(--primary)
+    }
+
+    .menu-content[_ngcontent-biu-c78] svg[_ngcontent-biu-c78] {
+      height: 16px;
+      width: 20px
+    }
+  </style>
+  <style>
+    @charset "UTF-8";
+
+    [_nghost-biu-c43] {
+      height: 21px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      background-color: #fafafa;
+      color: #bcbdbf;
+      font-size: 11px
+    }
+
+    [theme=dark][_nghost-biu-c43] {
+      background-color: #3d4251
+    }
+
+    @media (max-width: 767.98px) {
+      [_nghost-biu-c43] {
+        height: 42px
+      }
+    }
+
+    a[_ngcontent-biu-c43]:not(:last-child):after {
+      content: "\b7";
+      margin: 0 .2rem
+    }
+  </style>
+  <style>
+    .ngxp__container {
+      display: none;
+      position: absolute;
+      border-radius: 3px;
+      border: 1px solid grey;
+      box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+      padding: 10px
+    }
+
+    .ngxp__container.ngxp__animation {
+      -webkit-animation: 150ms ease-out ngxp-fadeIn;
+      animation: 150ms ease-out ngxp-fadeIn
+    }
+
+    .ngxp__container>.ngxp__arrow {
+      border-color: grey;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      margin: 5px
+    }
+
+    .ngxp__container[x-placement^=bottom],
+    .ngxp__container[x-placement^=left],
+    .ngxp__container[x-placement^=right],
+    .ngxp__container[x-placement^=top] {
+      display: block
+    }
+
+    .ngxp__container[x-placement^=top] {
+      margin-bottom: 5px
+    }
+
+    .ngxp__container[x-placement^=top]>.ngxp__arrow {
+      border-width: 5px 5px 0;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    .ngxp__container[x-placement^=top]>.ngxp__arrow.__force-arrow {
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      border-left-color: transparent !important
+    }
+
+    .ngxp__container[x-placement^=bottom] {
+      margin-top: 5px
+    }
+
+    .ngxp__container[x-placement^=bottom]>.ngxp__arrow {
+      border-width: 0 5px 5px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    .ngxp__container[x-placement^=bottom]>.ngxp__arrow.__force-arrow {
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-left-color: transparent !important
+    }
+
+    .ngxp__container[x-placement^=right] {
+      margin-left: 5px
+    }
+
+    .ngxp__container[x-placement^=right]>.ngxp__arrow {
+      border-width: 5px 5px 5px 0;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      left: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0
+    }
+
+    .ngxp__container[x-placement^=right]>.ngxp__arrow.__force-arrow {
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      border-left-color: transparent !important
+    }
+
+    .ngxp__container[x-placement^=left] {
+      margin-right: 5px
+    }
+
+    .ngxp__container[x-placement^=left]>.ngxp__arrow {
+      border-width: 5px 0 5px 5px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      right: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0
+    }
+
+    .ngxp__container[x-placement^=left]>.ngxp__arrow.__force-arrow {
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      border-right-color: transparent !important
+    }
+
+    @-webkit-keyframes ngxp-fadeIn {
+      0% {
+        display: none;
+        opacity: 0
+      }
+
+      1% {
+        display: block;
+        opacity: 0
+      }
+
+      100% {
+        display: block;
+        opacity: 1
+      }
+    }
+
+    @keyframes ngxp-fadeIn {
+      0% {
+        display: none;
+        opacity: 0
+      }
+
+      1% {
+        display: block;
+        opacity: 0
+      }
+
+      100% {
+        display: block;
+        opacity: 1
+      }
+    }
+  </style>
+  <style>
+    [_nghost-biu-c167] {
+      height: 100%;
+      overflow: hidden;
+      padding: 0
+    }
+
+    .info-label[_ngcontent-biu-c167] {
+      min-width: 100px;
+      width: 100px
+    }
+
+    fieldset[_ngcontent-biu-c167] {
+      border-bottom: 1px solid var(--border-color)
+    }
+
+    .experimental-col[_ngcontent-biu-c167] {
+      width: 100%
+    }
+
+    agx-tracking-map[_ngcontent-biu-c167] {
+      width: 40%
+    }
+
+    form[_ngcontent-biu-c167] {
+      --content-padding-x: 20px;
+      padding: 20px var(--content-padding-x)
+    }
+
+    @media (min-width: 1024px) {
+      form[_ngcontent-biu-c167] {
+        --content-padding-x: 50px;
+        width: 60%
+      }
+    }
+
+    @media (max-width: 768px) {
+      button[type=submit][_ngcontent-biu-c167] {
+        width: 100%
+      }
+
+      .transit-history-bottom-link[_ngcontent-biu-c167] {
+        display: none
+      }
+    }
+
+    @media (min-width: 768px) {
+      form[_ngcontent-biu-c167] {
+        --content-padding-x: 25px
+      }
+
+      .experimental-col[_ngcontent-biu-c167] {
+        width: 50%
+      }
+
+      .experimental-col[_ngcontent-biu-c167]:first-child {
+        border-right: 1px solid var(--border-color);
+        padding-right: 1.5rem
+      }
+
+      .experimental-col[_ngcontent-biu-c167]:last-child {
+        padding-left: 1.5rem
+      }
+    }
+  </style>
+  <style>
+    [_nghost-biu-c77] {
+      display: flex;
+      justify-content: flex-end;
+      left: auto
+    }
+
+    form[_ngcontent-biu-c77] {
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: #353a45;
+      height: 50px;
+      padding-right: 30px;
+      position: relative;
+      width: 30px;
+      transition-duration: .5s;
+      transition-timing-function: ease-out;
+      transition-property: background-color, border-color, width
+    }
+
+    form.expanded[_ngcontent-biu-c77] {
+      background-color: rgba(242, 244, 247, .4);
+      border-color: #e4e6e8;
+      width: 100%
+    }
+
+    form.expanded[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77] {
+      pointer-events: all
+    }
+
+    form.expanded[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77] {
+      background-color: transparent;
+      color: var(--primary)
+    }
+
+    form.expanded[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77] {
+      background-color: transparent;
+      color: rgba(117, 125, 146, .6)
+    }
+
+    form[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77] {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      height: 100%;
+      pointer-events: none
+    }
+
+    form[_ngcontent-biu-c77] .search-control[_ngcontent-biu-c77]::-ms-clear {
+      display: none
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77],
+    form[_ngcontent-biu-c77] typeahead-container.dropdown-menu {
+      background-color: #fff;
+      border: 1px solid #E4E6E8;
+      border-radius: 0 0 2px 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .09);
+      left: -1px;
+      right: -1px
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77] {
+      position: absolute;
+      top: 100%;
+      padding: 0 10px 5px
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>*[_ngcontent-biu-c77] {
+      padding: 10px
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>agx-tabs[_ngcontent-biu-c77] {
+      padding: 0
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77]>a[_ngcontent-biu-c77] {
+      border: 1px solid #E4E6E8;
+      background-color: rgba(246, 248, 248, .6);
+      margin-bottom: 5px
+    }
+
+    form[_ngcontent-biu-c77] .typeahead-message[_ngcontent-biu-c77] a[_ngcontent-biu-c77] {
+      display: block;
+      line-height: inherit;
+      cursor: pointer
+    }
+
+    form[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77],
+    form[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77] {
+      cursor: pointer;
+      line-height: 2rem;
+      position: absolute;
+      right: 2px;
+      text-align: center;
+      top: calc((50px - 2rem) / 2 - 1px)
+    }
+
+    form[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77]:not(:hover),
+    form[_ngcontent-biu-c77] .icon-close[_ngcontent-biu-c77]:not(:hover) {
+      color: #757d92
+    }
+
+    .shipment-list-wrapper[_ngcontent-biu-c77] {
+      overflow-y: auto
+    }
+
+    .shipment-list-wrapper[_ngcontent-biu-c77],
+    .shipment-list-wrapper[_ngcontent-biu-c77] table[_ngcontent-biu-c77] {
+      max-height: 290px
+    }
+
+    .shipment-list-wrapper.has-scrollbar[_ngcontent-biu-c77] {
+      overflow: hidden
+    }
+
+    .shipment-list-wrapper.has-scrollbar[_ngcontent-biu-c77] table[_ngcontent-biu-c77] {
+      overflow-y: auto
+    }
+
+    [_nghost-biu-c77] typeahead-container.dropdown-menu {
+      max-height: 327px !important;
+      height: auto;
+      margin-left: -1px;
+      margin-top: 0;
+      padding: 0 0 0 10px;
+      overflow: hidden
+    }
+
+    table[_ngcontent-biu-c77] {
+      overflow-y: auto
+    }
+
+    table[_ngcontent-biu-c77] tr[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] thead[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
+      display: block
+    }
+
+    table[_ngcontent-biu-c77] thead[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
+      padding-right: 10px
+    }
+
+    table[_ngcontent-biu-c77] tr[_ngcontent-biu-c77]:after {
+      clear: both;
+      content: " ";
+      display: block;
+      visibility: hidden
+    }
+
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77] {
+      float: left
+    }
+
+    table[_ngcontent-biu-c77] th.all-results-header[_ngcontent-biu-c77] {
+      float: right;
+      text-align: right
+    }
+
+    table[_ngcontent-biu-c77] th[_ngcontent-biu-c77] {
+      color: #757d92;
+      font-weight: normal;
+      line-height: 40px;
+      padding: 0 0 0 1rem
+    }
+
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] {
+      padding-bottom: 5px
+    }
+
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr[_ngcontent-biu-c77] {
+      background-color: rgba(246, 248, 248, .6);
+      border-radius: 2px;
+      margin-bottom: 5px
+    }
+
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr[_ngcontent-biu-c77]:hover {
+      background-color: rgba(246, 248, 248, .2)
+    }
+
+    table[_ngcontent-biu-c77] tbody[_ngcontent-biu-c77] tr.is-focused[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
+      border-color: #4d90fe
+    }
+
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
+      border-top: 1px solid #E4E6E8;
+      border-bottom: 1px solid #E4E6E8;
+      height: 45px;
+      padding: 1rem;
+      position: relative
+    }
+
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:first-child {
+      border-left: 1px solid #E4E6E8
+    }
+
+    table[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:last-child {
+      border-right: 1px solid #E4E6E8
+    }
+
+    table[_ngcontent-biu-c77] .shipment-id[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-link[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-pickup[_ngcontent-biu-c77],
+    table[_ngcontent-biu-c77] .shipment-delivery[_ngcontent-biu-c77] {
+      bottom: 0;
+      left: 1rem;
+      max-width: calc(100% - 2rem);
+      padding: 1rem 0;
+      position: absolute;
+      top: 0
+    }
+
+    table[_ngcontent-biu-c77] .link[_ngcontent-biu-c77] {
+      color: #6594c2;
+      cursor: pointer
+    }
+
+    table[_ngcontent-biu-c77] .subheader[_ngcontent-biu-c77] {
+      font-weight: 600;
+      padding: 0
+    }
+
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
+      width: 20%
+    }
+
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:last-child,
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:last-child {
+      width: 15%
+    }
+
+    .shipment-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(4),
+    .shipment-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(4) {
+      width: 25%
+    }
+
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(1),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(1),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(1),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(1) {
+      width: 60%
+    }
+
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(2),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(2),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(2),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(2) {
+      width: 25%
+    }
+
+    .vendor-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(3),
+    .vendor-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(3),
+    .account-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(3),
+    .account-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(3) {
+      width: 15%
+    }
+
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77],
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77] {
+      width: 20%
+    }
+
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(5),
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(5) {
+      width: 12%
+    }
+
+    .user-row[_ngcontent-biu-c77] th[_ngcontent-biu-c77]:nth-child(6),
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(6) {
+      width: 8%
+    }
+
+    .user-row[_ngcontent-biu-c77] td[_ngcontent-biu-c77]:nth-child(6) {
+      padding: 8px
+    }
+
+    .no-results-message[_ngcontent-biu-c77],
+    .typeahead-search-term-marked[_ngcontent-biu-c77] {
+      font-weight: 600
+    }
+
+    .no-results-message[_ngcontent-biu-c77] {
+      font-size: 14px
+    }
+
+    @media (max-width: 767.98px) {
+      form.expanded[_ngcontent-biu-c77] {
+        max-width: 100%
+      }
+
+      form.expanded[_ngcontent-biu-c77] .icon-search[_ngcontent-biu-c77] {
+        right: 10px
+      }
+
+      typeahead-container.dropdown-menu {
+        height: calc(100vh - 50px) !important
+      }
+    }
+  </style>
+  <style>
+    select[_ngcontent-biu-c163] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none
+    }
+
+    select.empty[_ngcontent-biu-c163] {
+      color: var(--form-placeholder-color);
+      font-style: var(--form-placeholder-font-style)
+    }
+
+    option[_ngcontent-biu-c163] {
+      background-color: #fff;
+      color: var(--form-control-color);
+      font-style: normal;
+      font-style: initial
+    }
+  </style>
+  <style>
+    [_nghost-biu-c134] {
+      display: block
+    }
+
+    input[_ngcontent-biu-c134] {
+      display: none
+    }
+
+    .error-message[_ngcontent-biu-c134] {
+      color: #b23541;
+      font-size: 11px;
+      white-space: pre-wrap
+    }
+
+    label[_ngcontent-biu-c134] {
+      color: #757d92;
+      line-height: 50px;
+      border: 2px dashed #E4E6E8;
+      border-radius: 3px;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0 3rem 20px;
+      display: block
+    }
+
+    label.drag-over[_ngcontent-biu-c134] {
+      border-color: var(--primary)
+    }
+
+    label[_ngcontent-biu-c134] span[_ngcontent-biu-c134] {
+      color: var(--primary)
+    }
+
+    label[_ngcontent-biu-c134] .additional-label[_ngcontent-biu-c134] {
+      display: block;
+      font-weight: 400;
+      line-height: .5rem;
+      color: #757d92
+    }
+
+    @media (max-width: 991.98px) {
+      label[_ngcontent-biu-c134] .additional-label[_ngcontent-biu-c134] {
+        line-height: normal
+      }
+    }
+
+    .file-icon[_ngcontent-biu-c134] {
+      color: #fff;
+      height: 44px;
+      width: 44px;
+      border: 1px solid #757D92;
+      border-radius: 2px;
+      background-color: rgba(117, 125, 146, .8)
+    }
+
+    .file-title[_ngcontent-biu-c134] {
+      color: #303030;
+      font-weight: 600
+    }
+
+    .file-note[_ngcontent-biu-c134] {
+      color: #757d92
+    }
+
+    .remove-btn[_ngcontent-biu-c134] {
+      color: #757d92;
+      cursor: pointer
+    }
+  </style>
+  <style>
+    .experimental-check-box[_ngcontent-biu-c164] {
+      padding: var(--checkbox-padding)
+    }
+
+    .experimental-check-box[_ngcontent-biu-c164]:hover {
+      background-color: var(--interactive-element-hover-bg)
+    }
+
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] {
+      height: var(--checkbox-size);
+      width: var(--checkbox-size);
+      border: 1px solid var(--checkbox-border-color);
+      border-radius: 2px;
+      background-color: #fff
+    }
+
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164]:focus {
+      border-radius: 4px
+    }
+
+    .experimental-check-box-input-wrapper.check-box-checked[_ngcontent-biu-c164] {
+      border-color: var(--primary);
+      border-width: 2px
+    }
+
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] svg-icon[_ngcontent-biu-c164] {
+      fill: var(--primary);
+      align-self: center;
+      height: var(--checkbox-checked-icon-height)
+    }
+
+    .experimental-check-box-input-wrapper[_ngcontent-biu-c164] input[_ngcontent-biu-c164] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none
+    }
+
+    .experimental-check-box[_ngcontent-biu-c164] label[_ngcontent-biu-c164] {
+      padding-left: calc(var(--checkbox-size) + 10px);
+      z-index: 10;
+      line-height: var(--checkbox-size)
+    }
+  </style>
+  <style>
+    .asterisk[_ngcontent-biu-c157] {
+      color: inherit
+    }
+
+    .error-message[_ngcontent-biu-c157] {
+      color: var(--form-error-color)
+    }
+
+    .form-control-icon[_ngcontent-biu-c157] {
+      color: var(--form-control-icon-color);
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    .expanded-label[_ngcontent-biu-c157] {
+      padding-top: 7px
+    }
+
+    @media (min-width: 1024px) {
+      .expanded-label[_ngcontent-biu-c157] {
+        padding-top: 3px
+      }
+    }
+
+    .experimental-form-control-active {
+      -webkit-box-shadow: 0 0 2px #12CFCF !important;
+      -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
+      box-shadow: 0 0 2px #12CFCF !important;
+      box-shadow: 0 0 0 2px #12CFCF !important;
+    }
+
+    .experimental-form-control-active:active {
+      box-shadow: var(--focus-box-shadow);
+      outline: none;
+    }
+
+    .experimental-form-control:focus,
+    .experimental-form-control:active {
+      background-color: #fff !important;
+      border-color: transparent !important;
+      -webkit-box-shadow: 0 0 2px #12CFCF !important;
+      -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
+      box-shadow: 0 0 2px #12CFCF !important;
+      box-shadow: 0 0 0 2px #12CFCF !important;
+      outline: none !important;
+    }
+  </style>
 </head>
-<body>
-  <div>
-    <input class="experimental-form-control" type="text" />
-  </div>
-  <br>
-  <div>
-    <input class="experimental-form-control" type="text" style="border-radius: 0;" />
-  </div>
+
+<body ontouchstart="">
+  <agx-forms-root _nghost-biu-c14="" ng-version="12.2.10">
+    <block-ui _ngcontent-biu-c14="" name="root">
+      <router-outlet _ngcontent-biu-c14=""></router-outlet>
+      <agx-forms-host _nghost-biu-c79="">
+        <router-outlet _ngcontent-biu-c79=""></router-outlet>
+        <agx-simple-transit-update _nghost-biu-c167="">
+          <div _ngcontent-biu-c167="" class="form-container">
+            <form _ngcontent-biu-c167="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+              <fieldset _ngcontent-biu-c167="" class="d-flex flex-wrap mb-4">
+                <div _ngcontent-biu-c167="" class="experimental-col">
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="signedBy"> Autocomplete
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control experimental-form-control-active w-100 ng-untouched ng-pristine ng-valid" id="signedBy" autocomplete="off"
+                            style="border-radius: 0;"
+                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="signedBy"> Active
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control experimental-form-control-active w-100 ng-untouched ng-pristine ng-valid" id="signedBy"
+                            type="text"><label _ngcontent-biu-c157="" for="signedBy">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
+                </div>
+                <div _ngcontent-biu-c167="" class="experimental-col">
+                  <agx-input-control _ngcontent-biu-c167="" class="w-100">
+                    <agx-form-control-wrapper _nghost-biu-c157="">
+                      <div _ngcontent-biu-c157="" class="mb-3">
+                        <div _ngcontent-biu-c157="" class="flex-column-center mb-1"><label _ngcontent-biu-c157=""
+                            class="mb-0" for="city"> Tabindex
+                            <!----></label>
+                          <!---->
+                        </div>
+                        <!---->
+                        <div _ngcontent-biu-c157="" class="position-relative"><input
+                            class="experimental-form-control w-100 ng-untouched ng-pristine ng-valid" id="city" tabindex="0"
+                            type="text"><label _ngcontent-biu-c157="" for="city">
+                            <!----></label></div>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                    </agx-form-control-wrapper>
+                  </agx-input-control>
+                </div>
+              </fieldset>
+            </form>
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!---->
+          <!---->
+        </agx-simple-transit-update>
+        <!---->
+      </agx-forms-host>
+      <!---->
+    </block-ui>
+    <!---->
+  </agx-forms-root>
 </body>
+
 </html>
