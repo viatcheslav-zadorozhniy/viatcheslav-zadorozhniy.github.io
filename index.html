@@ -1473,11 +1473,22 @@
       }
     }
 
+    .experimental-form-control:not(.experimental-form-control-active) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: block;
+    }
+
     .experimental-form-control-active {
-      -webkit-box-shadow: 0 0 2px #12CFCF !important;
-      -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
-      box-shadow: 0 0 2px #12CFCF !important;
-      box-shadow: 0 0 0 2px #12CFCF !important;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-box-shadow: 0px 0px 2px #12CFCF !important;
+      -webkit-box-shadow: 0px 0px 0px 2px #12CFCF !important;
+      box-shadow: 0px 0px 2px #12CFCF !important;
+      box-shadow: 0px 0px 0px 2px #12CFCF !important;
+      display: block;
     }
 
     .experimental-form-control-active:active {
@@ -1489,10 +1500,10 @@
     .experimental-form-control:active {
       background-color: #fff !important;
       border-color: transparent !important;
-      -webkit-box-shadow: 0 0 2px #12CFCF !important;
-      -webkit-box-shadow: 0 0 0 2px #12CFCF !important;
-      box-shadow: 0 0 2px #12CFCF !important;
-      box-shadow: 0 0 0 2px #12CFCF !important;
+      -webkit-box-shadow: 0px 0px 2px #12CFCF !important;
+      -webkit-box-shadow: 0px 0px 0px 2px #12CFCF !important;
+      box-shadow: 0px 0px 2px #12CFCF !important;
+      box-shadow: 0px 0px 0px 2px #12CFCF !important;
       outline: none !important;
     }
   </style>
