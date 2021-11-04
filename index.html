@@ -1477,10 +1477,11 @@
       box-shadow: var(--focus-box-shadow);
       outline: none;
     }
-    :focus-visible,
-    ::focus-visible {
+    body *:focus,
+    body *:active {
+      border-color: transparent !important;
       box-shadow: var(--focus-box-shadow) !important;
-      outline: none  !important;
+      outline: none !important;
     }
   </style>
 </head>
