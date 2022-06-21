@@ -1,0 +1,2 @@
+(this["webpackJsonpviatcheslav-zadorozhniy.github.io"]=this["webpackJsonpviatcheslav-zadorozhniy.github.io"]||[]).push([[12],{42:function(n,o,e){"use strict";function i(){var n=Promise.resolve(),o=Promise.reject();n.then((function(){return console.log("Promise 1 then")})).finally((function(){return console.log("Promise 1 finally")})),o.then((function(){return console.log("Promise 2 then")})).finally((function(){return console.log("Promise 2 finally")}))}e.r(o),e.d(o,"default",(function(){return i}))}}]);
+//# sourceMappingURL=12.bf620ea9.chunk.js.map

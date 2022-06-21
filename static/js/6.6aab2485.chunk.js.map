@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/home/Home.js"],"names":["Home","className"],"mappings":"uNAAe,SAASA,IACtB,OACE,yBAASC,UAAU,WAAnB,SACE","file":"static/js/6.6aab2485.chunk.js","sourcesContent":["export default function Home() {\r\n  return (\r\n    <article className='homepage'>\r\n      <h1>Home</h1>\r\n    </article>\r\n  );\r\n}\r\n"],"sourceRoot":""}
