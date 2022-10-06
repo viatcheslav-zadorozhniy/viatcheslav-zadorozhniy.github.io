@@ -1,0 +1,92 @@
+{
+  "configVersion": 1,
+  "timestamp": 1665064748080,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/171.02783a73f68d9ceb.js",
+        "/433.d7b29080ee2466ea.js",
+        "/442.c254f34b10bec0a4.js",
+        "/favicon.ico",
+        "/main.7f577ddd5b388b62.js",
+        "/manifest.webmanifest",
+        "/polyfills.bdacf18b5a71309f.js",
+        "/runtime.49e58739b4b31a79.js",
+        "/styles.972b862c8c5e945f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/nx-logo.png"
+      ],
+      "patterns": [
+        "\\/en\\/",
+        "\\/he\\/",
+        "\\/ru\\/",
+        "\\/uk\\/"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/171.02783a73f68d9ceb.js": "43e5ae613de1862f23f9c7176f13adabbf0582ae",
+    "/433.d7b29080ee2466ea.js": "12fdfa27d650d5787be02a91da5664c8ef13832c",
+    "/442.c254f34b10bec0a4.js": "437247c16879f3c289b6bf2e241edf08ed64d229",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/nx-logo.png": "b4fc0dac178bed6bf5b65393adb117c14700e3b6",
+    "/favicon.ico": "4e23d0f9b6ddaf3c9ddef90dbaed2342941297b5",
+    "/main.7f577ddd5b388b62.js": "a9f07a9b2f3e77b911cc0ba0295adb1482b2b797",
+    "/manifest.webmanifest": "febfcb2fef5fc03c7d3cb828bd39485b37adc90c",
+    "/polyfills.bdacf18b5a71309f.js": "f6e6307e98fe7930defff87ea8e6a75f96c680fd",
+    "/runtime.49e58739b4b31a79.js": "d732088507c297f3d4c73db0531779f45ff42845",
+    "/styles.972b862c8c5e945f.css": "5cb3e98059fe39f4e4b9f1f4564d55d32bd39011"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
