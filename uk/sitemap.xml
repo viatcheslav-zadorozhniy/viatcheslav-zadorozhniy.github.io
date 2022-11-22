@@ -7,22 +7,60 @@
     <loc>http://localhost:4000/he/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/ru/</loc>
-  </url>
-  <url>
     <loc>http://localhost:4000/uk/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/en/users</loc>
+    <loc>http://localhost:4000/en/demo</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/he/users</loc>
+    <loc>http://localhost:4000/he/demo</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/ru/users</loc>
+    <loc>http://localhost:4000/uk/demo</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/uk/users</loc>
+    <loc>http://localhost:4000/en/demo/gallery</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/he/demo/gallery</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/uk/demo/gallery</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/en/demo/payments</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/he/demo/payments</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/uk/demo/payments</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/en/demo/posts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/he/demo/posts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/uk/demo/posts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/en/demo/rtc</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/he/demo/rtc</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/uk/demo/rtc</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/en/demo/screen-share</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/he/demo/screen-share</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/uk/demo/screen-share</loc>
+  </url>
 </urlset>

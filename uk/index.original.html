@@ -18,12 +18,24 @@
     <script>
       // https://web.dev/learn/pwa/installation-prompt/
       // https://developer.mozilla.org/en-US/docs/Web/API/BeforeInstallPromptEvent
-      globalThis.pwaInstallPromptPromise = new Promise(resolve => {
-        globalThis.addEventListener('beforeinstallprompt', event => {
-          resolve(event);
+      (function() {
+        const pwaInstallEvents = {};
+
+        globalThis.pwaInstallEvents = pwaInstallEvents;
+
+        pwaInstallEvents.beforeInstallPrompt = new Promise(resolve => {
+          globalThis.addEventListener('beforeinstallprompt', event => {
+            resolve(event);
+          });
         });
-      });
+
+        pwaInstallEvents.installed = new Promise(resolve => {
+          globalThis.addEventListener('appinstalled', () => {
+            resolve(true);
+          });
+        });
+      }());
     </script>
-  <script src="runtime.8c0dc9692962ee97.js" type="module"></script><script src="polyfills.9c4e72bf9a234160.js" type="module"></script><script src="main.abb8fbfde0304bea.js" type="module"></script>
+  <script src="runtime.3a7a5b63896a70ab.js" type="module"></script><script src="polyfills.9c4e72bf9a234160.js" type="module"></script><script src="main.09b342cc21c70134.js" type="module"></script>
 
 </body></html>

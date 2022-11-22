@@ -1,7 +1,0 @@
-User-agent: Googlebot
-Disallow: /*.js$
-Disallow: /*.css$
-
-User-agent: *
-Disallow: /assets
-Sitemap: http://localhost:4000/en/sitemap.xml
